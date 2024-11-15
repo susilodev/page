@@ -4,3 +4,4 @@ languageCode = "en-us"
 title = "susilodev"
 relativeURLs = true
 canonifyURLs = true
+enableRobotsTXT = true
