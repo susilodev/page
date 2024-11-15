@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>susilodev</title>
+    <link>https://susilodev.com/</link>
+    <description>Recent content on susilodev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>susiloabdulmujib@outlook.com (indra susila)</managingEditor>
+    <webMaster>susiloabdulmujib@outlook.com (indra susila)</webMaster>
+    <copyright>© 2024 indra susila</copyright>
+    <atom:link href="https://susilodev.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Ultimate Guide to Web Development</title>
+      <link>https://susilodev.com/post/thrid-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>susiloabdulmujib@outlook.com (indra susila)</author>
+      <guid>https://susilodev.com/post/thrid-post/</guid>
+      <description>Panduan membuat konten dengan Blowfish theme di Hugo menggunakan Markdown.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

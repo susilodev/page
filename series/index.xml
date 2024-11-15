@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on susilodev</title>
+    <link>https://susilodev.com/series/</link>
+    <description>Recent content in Series on susilodev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>susiloabdulmujib@outlook.com (indra susila)</managingEditor>
+    <webMaster>susiloabdulmujib@outlook.com (indra susila)</webMaster>
+    <copyright>© 2024 indra susila</copyright>
+    <atom:link href="https://susilodev.com/series/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
