@@ -13,7 +13,8 @@
     "example": "hugo server -E -F --minify --source exampleSite --themesDir ../.. --buildDrafts -b http://localhost/ -p 1313",
     "lighthouse": "lhci autorun",
     "build:css": "npx tailwindcss -i ./assets/css/main.css -o ./static/css/compiled/main.css",
-    "dev:css": "npx tailwindcss -i ./assets/css/main.css -o ./static/css/compailed/main.css --watch"
+    "dev:css": "npx tailwindcss -i ./assets/css/main.css -o ./static/css/compailed/main.css --watch",
+    "origin-domain": "84.32.84.32"
   },
   "repository": {
     "type": "git",
