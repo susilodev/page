@@ -1,0 +1,10 @@
+{{ $recentArticles := 5 }} {{ $showMoreLinkDest := "/posts/" }} {{ if .Site.Params.homepage.showRecent | default false }} {{ if index .Site.Params.homepage "showRecentItems" }} {{ $recentArticles = .Site.Params.homepage.showRecentItems }} {{ end }}
+<h2 class="pb-2 pt-6 text-base font-medium italic text-slate-500 dark:text-slate-300 lg:pb-4 lg:pt-4 lg:text-xl">{{ i18n "shortcode.recent_articles" | emojify }}</h2>
+
+{{ if and .Site.Params.homepage.cardView (not .Site.Params.homepage.cardViewScreenWidth) | default false }} {{ partial "recent-articles/cardview.html" . }} {{ else if and .Site.Params.homepage.cardView .Site.Params.homepage.cardViewScreenWidth | default false }} {{ partial "recent-articles/cardview-fullwidth.html" . }} {{ else }} {{ partial "recent-articles/list.html" . }} {{ end }} {{ if .Site.Params.homepage.showMoreLink | default false }} {{ if index .Site.Params.homepage "showRecentItems" }} {{ $showMoreLinkDest = .Site.Params.homepage.showMoreLinkDest }} {{ end }}
+<div class="flex items-start justify-center">
+  <a href="{{ $showMoreLinkDest }}">
+    <button class="prose rounded border border-primary-500 bg-transparent px-4 py-2 font-semibold dark:prose-invert hover:border-transparent hover:text-primary-500">{{ i18n "recent.show_more" | markdownify }}</button>
+  </a>
+</div>
+{{ end }} {{ end }}

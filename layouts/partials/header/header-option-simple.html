@@ -1,0 +1,11 @@
+<a href="{{ .URL }}" {{ if or (strings.HasPrefix .URL "http:" ) (strings.HasPrefix .URL "https:" ) }} target="_blank" {{
+    end }} class="flex items-center ">
+    {{ if .Pre }}
+    <span {{ if and .Pre .Name}} class="mr-1" {{ end }}>
+        {{ partial "icon.html" .Pre }}
+    </span>
+    {{ end }}
+    <p class="text-gray-800 text-base dark:text-gray-100 hover:text-gray-800 dark:hover:text-gray-200" title="{{ .Title }}">
+        {{ .Name | markdownify }}
+    </p>
+</a>

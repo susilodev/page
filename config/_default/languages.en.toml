@@ -1,0 +1,27 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "susilodev"
+
+[params]
+displayName = "EN"
+isoCode = "en"
+rtl = false
+dateFormat = "2 January 2006"
+# logo = "img/logo.png"
+# secondaryLogo = "img/secondary-logo.png"
+# description = "My awesome website"
+# copyright = "Copy, _right?_ :thinking_face:"
+
+[params.author]
+name = "indra susila"
+email = "susiloabdulmujib@outlook.com"
+image = "img/blowfish_logo.png"
+imageQuality = 96
+headline = "I'm only human"
+bio = "empowering fulllstack with elixir and JS"
+links = [
+  { github = "https://github.com/susilodev" },
+  { x-twitter = "https://twitter.com/susilodev" },
+]

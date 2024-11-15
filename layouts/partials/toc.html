@@ -1,0 +1,78 @@
+<details open id="TOCView" class="toc-right mt-0 hidden overflow-y-scroll overscroll-contain rounded-lg scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-purple-500 lg:block ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:scrollbar-track-purple-800 dark:scrollbar-thumb-purple-600">
+  <summary class="block cursor-pointer bg-neutral-100 py-1 text-lg font-semibold text-neutral-800 lg:hidden ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-gray-200">{{ i18n "article.table_of_contents" }}</summary>
+  <div class="min-w-[220px] border-solid border-purple-600 py-2 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-gray-200">{{ .TableOfContents | emojify }}</div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg lg:hidden ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5">
+  <summary class="dark:bg-text-gray-200 cursor-pointer bg-neutral-100 py-1 text-lg font-semibold text-neutral-800 lg:hidden ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:text-neutral-100">{{ i18n "article.table_of_contents" }}</summary>
+  <div class="border-solid border-purple-600 py-2 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-gray-200">{{ .TableOfContents | emojify }}</div>
+</details>
+
+<script>
+
+    var margin = 200;
+    var marginError = 50;
+
+    (function () {
+      var $window = $(window);
+      var $toc = $('#TOCView');
+      var tocHeight = $toc.height();
+
+      function onResize() {
+        var windowAndMarginHeight = $window.height() - margin;
+        if(tocHeight >= windowAndMarginHeight) {
+          $toc.css("overflow-y", "scroll")
+          $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
+        } else {
+          $toc.css("overflow-y", "hidden")
+          $toc.css("max-height", "9999999px")
+        }
+      }
+
+      $window.on('resize', onResize);
+      $(document).ready(onResize);
+    })();
+
+  {{ if .Site.Params.smartTOC }}
+
+    (function () {
+      var $toc = $('#TableOfContents');
+      if ($toc.length > 0) {
+        var $window = $(window);
+
+        function onScroll() {
+          var currentScroll = $window.scrollTop();
+          var h = $('.anchor');
+          var id = "";
+          h.each(function (i, e) {
+            e = $(e);
+            if (e.offset().top - $(window).height()/3 <= currentScroll) {
+              id = decodeURIComponent(e.attr('id'));
+            }
+          });
+          var active = $toc.find('a.active');
+          if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+          active.each(function (i, e) {
+            {{ if .Site.Params.smartTOCHideUnfocusedChildren }}
+              $(e).removeClass('active').siblings('ul').hide();
+            {{ else }}
+              $(e).removeClass('active');
+            {{ end }}
+          });
+          $toc.find('a[href="#' + id + '"]').addClass('active')
+          $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+            $(e).children('a').parents('ul').show();
+          });
+        }
+
+        $window.on('scroll', onScroll);
+        $(document).ready(function () {
+          {{ if .Site.Params.smartTOCHideUnfocusedChildren }}
+            $toc.find('a').parent('li').find('ul').hide();
+          {{ end }}
+          onScroll();
+        });
+      }
+    })();
+  {{ end }}
+</script>
