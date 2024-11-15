@@ -1,4 +1,6 @@
 
-baseURL = "susilodev.github.io/page/"
+baseURL = "https://susilodev.com/"
 languageCode = "en-us"
 title = "susilodev"
+relativeURLs = true
+canonifyURLs = true
