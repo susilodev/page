@@ -3099,8 +3099,9 @@ body button {
   font-size: 0.85rem;
   font-weight: 700 !important;
   color: #6800b5 !important;
-  /* text-decoration-offset: 3px; */
-  /* text-decoration: underline; */
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
 
 a.active {
@@ -3114,7 +3115,7 @@ a.active::before {
   top: 0;
   left: -10px;
   bottom: 0;
-  width: 2px;
+  width: 1px;
   /* Lebar border */
   background-color: #6800b5;
   /* Warna border */
