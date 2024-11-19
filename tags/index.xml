@@ -2,30 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on susilodev</title>
-    <link>https://susilodev.com/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on susilodev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>susiloabdulmujib@outlook.com (indra susila)</managingEditor>
     <webMaster>susiloabdulmujib@outlook.com (indra susila)</webMaster>
     <copyright>© 2024 indra susila</copyright>
-    <atom:link href="https://susilodev.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go</title>
+      <link>http://localhost:1313/tags/go/</link>
+      <pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate>
+      <author>susiloabdulmujib@outlook.com (indra susila)</author>
+      <guid>http://localhost:1313/tags/go/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>http://localhost:1313/tags/javascript/</link>
+      <pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate>
+      <author>susiloabdulmujib@outlook.com (indra susila)</author>
+      <guid>http://localhost:1313/tags/javascript/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>Reactjs</title>
-      <link>https://susilodev.com/tags/reactjs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>http://localhost:1313/tags/reactjs/</link>
+      <pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate>
       <author>susiloabdulmujib@outlook.com (indra susila)</author>
-      <guid>https://susilodev.com/tags/reactjs/</guid>
+      <guid>http://localhost:1313/tags/reactjs/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Security</title>
-      <link>https://susilodev.com/tags/security/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>http://localhost:1313/tags/security/</link>
+      <pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate>
       <author>susiloabdulmujib@outlook.com (indra susila)</author>
-      <guid>https://susilodev.com/tags/security/</guid>
+      <guid>http://localhost:1313/tags/security/</guid>
       <description></description>
       
     </item>

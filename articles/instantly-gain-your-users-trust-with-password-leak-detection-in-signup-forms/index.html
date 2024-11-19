@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="light"
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>Instantly Gain Your Users&#39; Trust with Password Leak Detection in Signup Forms &middot; susilodev</title>
+  <meta name="title" content="Instantly Gain Your Users&#39; Trust with Password Leak Detection in Signup Forms &middot; susilodev" />
+  
+  <meta name="description" content="adding extra feature at signup forms validation with Password Leak Detection" />
+  <meta name="keywords" content="security, reactjs, go, javascript, " />
+  
+  
+  <link rel="canonical" href="http://localhost:1313/articles/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms/" />
+  
+  
+  
+
+
+  <link rel="stylesheet" href="../../css/compiled.css">
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+  <link type="text/css" rel="stylesheet" href="../../css/main.bundle.min.9a4fbfc36f1ed6d18e276600190cc77011974b186047ec2404064309f94a37f5f82f2706df6fef70cf4bd889c2649a2f8a804550a0e6c3e5d9bf8ddcd03f648c.css?v=1732015032" integrity="sha512-mk&#43;/w28e1tGOJ2YAGQzHcBGXSxhgR&#43;wkBAZDCflKN/X4LycG32/vcM9L2InCZJovioBFUKDmw&#43;XZv43c0D9kjA==" />
+
+  
+  
+  <script type="text/javascript" src="../../js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="../../js/main.bundle.min.a2d78d78672e549fbfc972ece871725b5478ba0b65708dda20cb97ab80a865eae6d247e1b05a4aec6ebbf78647ec3233bad8b2609ed98eee53cd58aa17128bc7.js"
+    integrity="sha512-oteNeGcuVJ&#43;/yXLs6HFyW1R4ugtlcI3aIMuXq4CoZerm0kfhsFpK7G6794ZH7DIzutiyYJ7Zju5TzViqFxKLxw==" data-copy="" data-copied=""></script>
+  
+  
+  
+  <script src="../../lib/zoom/zoom.min.37d2094687372da3f7343a221a470f6b8806f7891aa46a5a03966af7f0ebd38b9fe536cb154e6ad28f006d184b294525a7c4054b6bbb4be62d8b453b42db99bd.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S&#43;Yti0U7QtuZvQ=="></script>
+  
+  
+  
+
+  
+  <link rel="icon" href="../../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+  <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="manifest" href="../../site.webmanifest" />
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+
+
+  
+
+  <meta property="og:title" content="Instantly Gain Your Users&#39; Trust with Password Leak Detection in Signup Forms">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="http://localhost:1313/articles/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms/">
+  <meta property="og:image" content="/images/security/pawned/thumbail-security-pawned.png">
+  <meta property="og:type" content="article">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/articles/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms/">
+  <meta property="og:site_name" content="susilodev">
+  <meta property="og:title" content="Instantly Gain Your Users&#39; Trust with Password Leak Detection in Signup Forms">
+  <meta property="og:description" content="adding extra feature at signup forms validation with Password Leak Detection">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="articles">
+    <meta property="article:published_time" content="2024-11-16T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-11-16T00:00:00+00:00">
+    <meta property="article:tag" content="Security">
+    <meta property="article:tag" content="Reactjs">
+    <meta property="article:tag" content="Go">
+    <meta property="article:tag" content="Javascript">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Instantly Gain Your Users&#39; Trust with Password Leak Detection in Signup Forms">
+  <meta name="twitter:description" content="adding extra feature at signup forms validation with Password Leak Detection">
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Articles",
+    "name": "Instantly Gain Your Users\u0027 Trust with Password Leak Detection in Signup Forms",
+    "headline": "Instantly Gain Your Users\u0027 Trust with Password Leak Detection in Signup Forms",
+    "description": "adding extra feature at signup forms validation with Password Leak Detection",
+    
+    "inLanguage": "en",
+    "url" : "http:\/\/localhost:1313\/articles\/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms\/",
+    "author" : {
+      "@type": "Person",
+      "name": "indra susila"
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-11-16T00:00:00\u002b00:00",
+    "datePublished": "2024-11-16T00:00:00\u002b00:00",
+    
+    "dateModified": "2024-11-16T00:00:00\u002b00:00",
+    
+    "keywords": ["security","reactjs","go","javascript"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "957"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="indra susila" />
+  
+  
+  
+  <link href="https://github.com/susilodev" rel="me" />
+  
+  
+  <link href="https://twitter.com/susilodev" rel="me" />
+  
+  
+  <link href="https://www.linkedin.com/in/indra-susila" rel="me" />
+  
+  
+  
+  
+
+<script src="../../lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
+
+
+
+
+
+
+
+
+
+<script defer type="text/javascript" src="../../js/chart.bundle.cabb2a2e3e90553ee6fa175693cbfa26345b03fcc4fd5895429405a4c57b3854c40633daa4543dea339d0f00fb81b6e69cb3a54d55292db5de4077c70e80dba8.js"
+  integrity="sha512-yrsqLj6QVT7m&#43;hdWk8v6JjRbA/zE/ViVQpQFpMV7OFTEBjPapFQ96jOdDwD7gbbmnLOlTVUpLbXeQHfHDoDbqA=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+
+
+  <meta name="theme-color"/>
+  
+  
+
+
+
+<link
+  rel="stylesheet"
+  href="../../css/monokai.css"
+/>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+</head>
+<body
+  class="flex flex-col px-4 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 font-inter">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 px-4 lg:px-[24px]" style="z-index: 100">
+  <div id="menu-blur" class="single_hero_background nozoom absolute inset-x-0 top-0 h-full opacity-0 shadow-2xl backdrop-blur-2xl"></div>
+  <div class="relative ml-auto mr-auto max-w-[64rem]"><div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-3 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+            <a href="../../" class="text-xl md:text-2xl italic font-bold text-gray-700 dark:text-slate-100 hover:text-gray-500 ">susilodev</a>
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12 h-14 gap-x-1">
+
+            
+            
+            
+  <a href="../../articles/"  class="flex items-center ">
+    
+    <p class="text-gray-800 text-base dark:text-gray-100 hover:text-gray-800 dark:hover:text-gray-200" title="">
+        Blog
+    </p>
+</a>
+
+
+
+            
+            
+
+            
+
+
+            <section class="ring-[1px] rounded-full py-1 px-3 ring-slate-400">
+              
+              <button id="search-button" aria-label="Search" class="text-base flex flex-row items-center hover:text-primary-600 dark:hover:text-primary-400"
+                  title="">
+                  
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+                  
+                  <span class="hidden lg:flex text-sm ml-2 text-slate- dark:text-slate-300">or press "/"</span>
+              </button>
+              
+
+            </section>
+
+
+            
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" class="block">
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li id="menu-close-button">
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="../../articles/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            Blog
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+</div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+    var background_blur = document.getElementById('menu-blur')
+    background_blur.style.opacity = scroll / 300
+  })
+</script>
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+  
+  
+  
+  
+  
+ 
+
+
+
+  
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="../../"
+      >susilodev</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline ">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="../../articles/"
+      >Articles</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="../../articles/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms/"
+      >Instantly Gain Your Users&#39; Trust with Password Leak Detection in Signup Forms</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      Instantly Gain Your Users' Trust with Password Leak Detection in Signup Forms
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-11-16T00:00:00&#43;00:00">16 November 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/security/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Security
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/reactjs/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Reactjs
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/go/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Go
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/javascript/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Javascript
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+
+    
+      
+      
+        
+        
+<div class="flex author">
+  
+    
+    
+      
+    
+    
+      
+        
+      
+      <img class="!mt-0 !mb-0  w-16 h-16 rounded-full ltr:mr-4 rtl:ml-4" width="50" height="50"
+      alt="indra susila" src="../../img/susilodev-profile_hu13924622528243214365.jpeg" />
+    
+  
+  <div class="place-self-center space-y-1">
+    
+    <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+      
+    </div>
+    <div class="font-medium text-base leading-6 text-neutral-800 dark:text-neutral-300">
+      indra susila
+    </div>
+    
+    
+    <div class="text-sm font-light text-slate-500  dark:text-neutral-400">safe code, sleep well</div>
+    
+    <div class="text-sm sm:text-sm">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/susilodev"
+          target="_blank"
+          aria-label="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://twitter.com/susilodev"
+          target="_blank"
+          aria-label="X-Twitter"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+  </span>
+
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://www.linkedin.com/in/indra-susila"
+          target="_blank"
+          aria-label="Linkedin"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+
+  </span>
+
+</span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+
+      
+
+      
+
+      
+      <div class="mb-5"></div>
+      
+
+    
+
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
+
+         <details
+  open
+  id="TOCView"
+  class="toc-right mt-0 hidden overflow-y-scroll overscroll-contain rounded-lg scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-purple-500 lg:block ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:scrollbar-track-purple-800 dark:scrollbar-thumb-purple-600"
+>
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 text-lg font-semibold text-neutral-800 lg:hidden ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-gray-200"
+  >
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] border-solid border-purple-400/80 py-2 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-gray-200"
+  >
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#mekanisme-password-check-detection-melalui-pustaka-data-breach">mekanisme password check detection melalui pustaka data breach</a>
+      <ul>
+        <li><a href="#haveibeenpwned-hibp">haveibeenpwned (HIBP)</a></li>
+        <li><a href="#pragmatics-analisis">Pragmatics Analisis</a></li>
+      </ul>
+    </li>
+    <li><a href="#technical-implementation">Technical Implementation</a>
+      <ul>
+        <li><a href="#imolementasi-pada-frontend">imolementasi pada frontend</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details
+  class="toc-inside mt-0 overflow-hidden rounded-lg lg:hidden ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5"
+>
+  <summary
+    class="dark:bg-text-gray-200 cursor-pointer bg-neutral-100 py-1 text-lg font-semibold text-gray-700 lg:hidden ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:text-neutral-100"
+  >
+    Table of Contents
+  </summary>
+  <div
+    class="border-solid py-2 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-gray-200"
+  >
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#mekanisme-password-check-detection-melalui-pustaka-data-breach">mekanisme password check detection melalui pustaka data breach</a>
+      <ul>
+        <li><a href="#haveibeenpwned-hibp">haveibeenpwned (HIBP)</a></li>
+        <li><a href="#pragmatics-analisis">Pragmatics Analisis</a></li>
+      </ul>
+    </li>
+    <li><a href="#technical-implementation">Technical Implementation</a>
+      <ul>
+        <li><a href="#imolementasi-pada-frontend">imolementasi pada frontend</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+<script>
+
+    var margin = 200;
+    var marginError = 50;
+
+    (function () {
+      var $window = $(window);
+      var $toc = $('#TOCView');
+      var tocHeight = $toc.height();
+
+      function onResize() {
+        var windowAndMarginHeight = $window.height() - margin;
+        if(tocHeight >= windowAndMarginHeight) {
+          $toc.css("overflow-y", "scroll")
+          $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
+        } else {
+          $toc.css("overflow-y", "hidden")
+          $toc.css("max-height", "9999999px")
+        }
+      }
+
+      $window.on('resize', onResize);
+      $(document).ready(onResize);
+    })();
+
+  
+
+    (function () {
+      var $toc = $('#TableOfContents');
+      if ($toc.length > 0) {
+        var $window = $(window);
+
+        function onScroll() {
+          var currentScroll = $window.scrollTop();
+          var h = $('.anchor');
+          var id = "";
+          h.each(function (i, e) {
+            e = $(e);
+            if (e.offset().top - $(window).height()/3 <= currentScroll) {
+              id = decodeURIComponent(e.attr('id'));
+            }
+          });
+          var active = $toc.find('a.active');
+          if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+          active.each(function (i, e) {
+            
+              $(e).removeClass('active');
+            
+          });
+          $toc.find('a[href="#' + id + '"]').addClass('active')
+          $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+            $(e).children('a').parents('ul').show();
+          });
+        }
+
+        $window.on('scroll', onScroll);
+        $(document).ready(function () {
+          
+          onScroll();
+        });
+      }
+    })();
+  
+</script>
+   </div>
+      </div>
+      
+
+      <div class="min-w-0 min-h-0 max-w-fit lg:min-w-[80%] lg:w-10/12">
+        
+        
+
+
+        <div class="article-content max-w-prose mb-20">
+          
+
+<h2 class="relative group">Introduction 
+    <div id="introduction" class="anchor"></div>
+    
+</h2>
+<p>tidak semua pengguna platform digital peduli pada jenis kebocoran data yang terjadi ada di internet.
+hal itu wajar karena tidak semua orang memiliki perhatian khusus pada web security, bahkan untuk seorang software engineer sekalipun.</p>
+<p>tapi berbicara soal password adalah hal yang berbeda.
+tak peduli dia bodoh atau pintar mengenai teknologi,
+password akan selalu menjadi perhatian khusus bagi user. kenapa? karena ini lebih dari sekedar personal.
+dan skenario terburuk pada setiap orang adalah passwordnya diketahui orang lain.
+terlebih kecenderungan menggunakan hal yang sangat personal untuk password sudah sangat umum seperti
+mungkin nama ibunya, nama mantan, anime karakter, atau hal personal lain.</p>
+
+
+<h2 class="relative group">mekanisme password check detection melalui pustaka data breach 
+    <div id="mekanisme-password-check-detection-melalui-pustaka-data-breach" class="anchor"></div>
+    
+</h2>
+<p>data breach telah terjadi lebih dari dekade yang lalu, dan terjadi pada perusahaan besar seperti adobe,
+twitter, facebook, gmail, canva, tokopedia. <a href="https://haveibeenpwned.com/PwnedWebsites" target="_blank">[source]</a></p>
+<p>bersamaan dengan itu para developer juga sudah menambahkan beberapa fitur untuk meningkatkan keamanan entah itu menggunakan 2FA, OTP, security quiestions, MFA, hingga FIDO2. tak heran kini banyak perusahaan juga yang menawarkan security service bahkan khusus untuk menagani data breach seperti 1password, mozilla monitor, databreach.com, dan masih banyak lagi.</p>
+
+
+<h3 class="relative group">haveibeenpwned (HIBP) 
+    <div id="haveibeenpwned-hibp" class="anchor"></div>
+    
+</h3>
+<p>sejauh yang saya ketahui, satu-satunya data pustaka yang memberikan access terbuka secara public untuk password breach hanya haveibeenpwned. (CMIIW), bahkan hampir semua security service terintegrasi dengannya.</p>
+<p>haveibeenpwned adalah pustaka data breachs yang memberikan informasi kepada user tentang email, no telpon, password, dan hal lain yang telah bocor dan tersebar di internet.</p>
+<p>haveibeenpwned dikembangkan oleh <a href="https://haveibeenpwned.com/About" target="_blank">Troy Hunt</a>. seorang pakar keamanan cyber yang saat ini menjavat sebagai microsoft regional director. troy hunt sejak lama mengumpulkan kata sandi dari berbagai sumber yang telah terekxpose di internet dengan tujuan membantu public mengetahui apakah kata sandi yang mereka gunakan sudah pernah terekspos sebelumnya, sehingga mereka dapat menghindari penggunaan kata sandi yang tidak aman.</p>
+<p>hingga kini lebih dari 1 miliyar password breachs telah dikumpulkan dan telah terintegrasi di berbagai perusahaan dan security service seperti 1password, mozilla, github dan lain-lain.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /articles/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms/hbip-ss_hu15518564209346493683.png 330w,
+        /articles/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms/hbip-ss_hu3970376174425628704.png 660w,
+        /articles/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms/hbip-ss_hu11507179383088667389.png 1024w,
+        /articles/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms/hbip-ss_hu11791868091490656552.png 2x"
+        src="../../articles/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms/hbip-ss_hu3970376174425628704.png"
+        alt="havaibeenpawned online"
+      />
+      <figcaption>haveibeenpawned online tools, you can try for yourself at <a href="https://haveibeenpwned.com/Passwords" target="_blank">[this]</a></figcaption>
+    </figure>
+</p>
+<p>saya percaya fitur password check detection potensial memberikan
+impact positif secara dalam bagi user experience dan psikologi pengguna.</p>
+<p>mungkin beberapa orang akan terkejut saat mengetahui password yang ia gunakan ternyata pernah bocor/ pernah diketahui orang asing, dan bahkan iya telah gunakan bertahun-tahun.
+dan saat user mengganti passwordnya tentu dia akan merasa sangat terbantu, dan mungkin menggantinya juga di platform yang lain.
+dan disaat yang sama kita bisa mendapatkan impression positif.
+bukan hanya password barunya yang dia ingat. tapi juga product mu.</p>
+<p>itu adalah expected behaviour, hal ini mungkin bisa berbeda apabila terjadi pada case lain.</p>
+<p>namun jika fitur ini berjalan di platform financial industry(bank, payment gateway, blockchain) dan cloud service. kecenderungan
+mendapatkan positif feedback tidak akan jauh berbeda. terlebih jika kompetitor tidak memiliki ini. <strong>ini adalah pendapat pribadi saya</strong> dan sayangnya saya belum memiliki data yang ckup untuk mengukurnya.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /articles/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms/github-hbip-ss_hu7960709323019522569.gif 330w,
+        /articles/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms/github-hbip-ss_hu11772452524618732944.gif 660w,
+        /articles/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms/github-hbip-ss_hu11070671835535539611.gif 1024w,
+        /articles/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms/github-hbip-ss_hu10305628049865794336.gif 2x"
+        src="../../articles/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms/github-hbip-ss_hu11772452524618732944.gif"
+        alt="github using password breach detection"
+      />
+      <figcaption>Github already using password breach checking <a href="https://github.com/signup" target="_blank">[source]</a></figcaption>
+    </figure>
+</p>
+
+
+<h3 class="relative group">Pragmatics Analisis 
+    <div id="pragmatics-analisis" class="anchor"></div>
+    
+</h3>
+<p>pada kasus lain, hostinger cukup menarik. hostinger adalah perusahaan hosting provider. dalam situs hostinger.com ia tidak menggunakan data breach checking, namun saat saya membeli domainnya 1 bulan lalu di indonbesia / hostinger.co.id dia telah menggunakannya.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /articles/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms/hostinger-breach_hu13689065043693127480.gif 330w,
+        /articles/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms/hostinger-breach_hu12951022439118794168.gif 660w,
+        /articles/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms/hostinger-breach_hu8791025699858785075.gif 1024w,
+        /articles/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms/hostinger-breach_hu18108595964317939325.gif 2x"
+        src="../../articles/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms/hostinger-breach_hu12951022439118794168.gif"
+        alt="hostinger data check"
+      />
+      <figcaption>hosting provider hostinger cabang indonesia menggunakan data breach checking <a href="https://www.hostinger.co.id/" target="_blank">[source]</a></figcaption>
+    </figure>
+</p>
+<p>sepertinya hostinger memainkan perannya dengan baik dalam membaca keadaan, jika anda benar benar orang indonesia anda pasti tahu apa yang terjadi di indonesia dalam kurun waktu 3 tahun terakhir.</p>
+
+<div class="chart">
+  <canvas id="chart-003433d2e7981b1c2838dee8757a442e"></canvas>
+  <script type="text/javascript">
+    window.addEventListener("DOMContentLoaded", (event) => {
+      const ctx = document.getElementById("chart-003433d2e7981b1c2838dee8757a442e");
+      const chart = new Chart(ctx, {
+        
+type: 'line',
+data: {
+labels: ['Q1 2021', 'Q2 2022', 'Q3 2021', 'Q4 2021', 'Q1 2022', 'Q2 2022', 'Q3 2022', 'Q4 2024', 'Q1 2023'],
+datasets: [{
+label: 'indonesian data breach',
+data: [1339.4, 699.47, 1581.16, 492.16, 430.18, 902.14, 13260.29, 251.07, 89.11],
+}]
+}
+
+      });
+    });
+  </script>
+</div>
+
+<p class="text-xs text-center">
+  indonesian data breach by <bold><a href="https://www.statista.com/statistics/1411281/indonesia-quarterly-number-of-data-breaches/" target="_blank">statistica</a></bold>
+</p>
+<p>diatas adalah data 2021 hingga tahun 2023, dan di tahun ini indonesia mengalami lonjakan data breach hingga di penghujung 2024
+<a href="https://www.cyberlands.io/topsecuritybreachesindonesia" target="_blank">[source]</a>. hingga puncaknya pemerintah indonesia sendiri mengalami masalah data breachs yang cukup serius sejak juli hingga saat ini <a href="https://www.reuters.com/world/asia-pacific/indonesias-tax-agency-probes-alleged-personal-data-breach-2024-09-19/" target="_blank">[source]</a>, sehingga konsekunsi logis dari chart diatas adalah data pada Q2 2024 harusnya melonjak. dan dari lonjakan tersebut tentu ini menjadi sebuah peluang.</p>
+<blockquote>
+<p>disclaimer, ini adalah opini saya pribadi.</p>
+</blockquote>
+
+
+<h2 class="relative group">Technical Implementation 
+    <div id="technical-implementation" class="anchor"></div>
+    
+</h2>
+<p>kita akan menggunakan haveibeenpawned sebagai pustaka password breachs. dan sejauh ini kita dapat melakukan dengan 2 cara.</p>
+<ol>
+<li>
+<p>menggunakan api <a href="https://api.pwnedpasswords.com" target="_blank">https://api.pwnedpasswords.com</a> , ini adalah bagian dari haveibeenpawned. troy hunt membuatnya bebas biaya, namun memiliki rate limit.</p>
+</li>
+<li>
+<p>self hosted haveibeenpawned password.<br>
+kita perlu mendownload password breachs list dengan menggunakan <a href="https://github.com/HaveIBeenPwned/PwnedPasswordsDownloader" target="_blank">haveipawned downloader</a>, lalu mengembangkannya di server
+kita sendiri.</p>
+</li>
+</ol>
+
+
+<h3 class="relative group">imolementasi pada frontend 
+    <div id="imolementasi-pada-frontend" class="anchor"></div>
+    
+</h3>
+<p>untuk melindungi data privasi user, haveibeenpawned menggunakan <a href="https://epic.org/wp-content/uploads/privacy/reidentification/Samarati_Sweeney_paper.pdf" target="_blank">K-Anatomy</a>. setiap request yang kita lakukan, kita harus melakukan proses hash pada value yang akan kita kirim.</p>
+<p>untuk tujuan umum, kita membuatnya di reactjs</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-tsx" data-lang="tsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">React</span> <span class="kr">from</span> <span class="s1">&#39;react&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">useForm</span><span class="p">,</span> <span class="nx">SubmitHandler</span><span class="p">,</span> <span class="nx">FieldErrors</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;react-hook-form&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">axios</span> <span class="kr">from</span> <span class="s1">&#39;axios&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">sha1</span> <span class="kr">from</span> <span class="s1">&#39;sha1&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Definisikan tipe untuk input form
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">interface</span> <span class="nx">IFormInput</span> <span class="p">{</span>
+</span></span><span class="line hl"><span class="cl">  <span class="nx">password</span>: <span class="kt">string</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">PasswordCheckForm() {</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">{</span> <span class="nx">register</span><span class="p">,</span> <span class="nx">handleSubmit</span><span class="p">,</span> <span class="nx">setError</span><span class="p">,</span> <span class="nx">formState</span><span class="o">:</span> <span class="p">{</span> <span class="nx">errors</span><span class="p">,</span> <span class="nx">isSubmitting</span> <span class="p">}</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">useForm</span><span class="p">&lt;</span><span class="nt">IFormInput</span><span class="p">&gt;();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Fungsi untuk memvalidasi password menggunakan HIBP
+</span></span></span><span class="line hl"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="nx">checkPassword</span> <span class="o">=</span> <span class="kr">async</span> <span class="p">(</span><span class="nx">password</span>: <span class="kt">string</span><span class="p">)</span><span class="o">:</span> <span class="nx">Promise</span><span class="p">&lt;</span><span class="nt">boolean</span><span class="p">&gt;</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line hl"><span class="cl">    <span class="c1">// Hash kata sandi menggunakan SHA-1
+</span></span></span><span class="line hl"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">hashedPassword</span> <span class="o">=</span> <span class="nx">sha1</span><span class="p">(</span><span class="nx">password</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">prefix</span> <span class="o">=</span> <span class="nx">hashedPassword</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span> <span class="c1">// 5 karakter pertama
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">suffix</span> <span class="o">=</span> <span class="nx">hashedPassword</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>    <span class="c1">// Sisa karakter
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="c1">// Kirim prefix ke HIBP API
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="kr">const</span> <span class="nx">response</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">axios</span><span class="p">.</span><span class="kr">get</span><span class="p">(</span><span class="sb">`https://api.pwnedpasswords.com/range/</span><span class="si">${</span><span class="nx">prefix</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="kr">const</span> <span class="nx">hashes</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;\n&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="c1">// Cek apakah suffix ada dalam daftar hash yang dikembalikan
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="kr">const</span> <span class="nx">found</span> <span class="o">=</span> <span class="nx">hashes</span><span class="p">.</span><span class="nx">some</span><span class="p">(</span><span class="nx">hash</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="p">[</span><span class="nx">hashSuffix</span><span class="p">]</span> <span class="o">=</span> <span class="nx">hash</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">hashSuffix</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">()</span> <span class="o">===</span> <span class="nx">suffix</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">      <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="nx">found</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">&#39;Error checking password:&#39;</span><span class="p">,</span> <span class="nx">error</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Handler untuk submit form
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="nx">onSubmit</span>: <span class="kt">SubmitHandler</span><span class="p">&lt;</span><span class="nt">IFormInput</span><span class="p">&gt;</span> <span class="o">=</span> <span class="kr">async</span> <span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">isPwned</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">checkPassword</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">password</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">isPwned</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">setError</span><span class="p">(</span><span class="s1">&#39;password&#39;</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">type</span><span class="o">:</span> <span class="s1">&#39;manual&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">message</span><span class="o">:</span> <span class="s1">&#39;Password telah ditemukan dalam pelanggaran data, gunakan kata sandi lain!&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="p">});</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Password aman!&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">onError</span> <span class="o">=</span> <span class="p">(</span><span class="nx">errors</span>: <span class="kt">FieldErrors</span><span class="p">&lt;</span><span class="nt">IFormInput</span><span class="p">&gt;)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">&#39;Validation Errors:&#39;</span><span class="p">,</span> <span class="nx">errors</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">onSubmit</span><span class="o">=</span><span class="p">{</span><span class="nx">handleSubmit</span><span class="p">(</span><span class="nx">onSubmit</span><span class="p">,</span> <span class="nx">onError</span><span class="p">)}&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">htmlFor</span><span class="o">=</span><span class="s">&#34;password&#34;</span><span class="p">&gt;</span><span class="nx">Password</span><span class="o">:</span><span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">input</span>
+</span></span><span class="line"><span class="cl">          <span class="na">type</span><span class="o">=</span><span class="s">&#34;password&#34;</span>
+</span></span><span class="line"><span class="cl">          <span class="na">id</span><span class="o">=</span><span class="s">&#34;password&#34;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">{</span><span class="na">...register</span><span class="err">(&#39;</span><span class="na">password</span><span class="err">&#39;,</span> <span class="p">{</span> <span class="na">required</span><span class="err">:</span> <span class="err">&#39;</span><span class="na">Password</span> <span class="na">wajib</span> <span class="na">diisi</span><span class="err">&#39;</span> <span class="p">}</span><span class="err">)</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">          <span class="na">aria-invalid</span><span class="o">=</span><span class="p">{</span><span class="nx">errors</span><span class="p">.</span><span class="nx">password</span> <span class="o">?</span> <span class="s1">&#39;true&#39;</span> <span class="o">:</span> <span class="s1">&#39;false&#39;</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span><span class="nx">errors</span><span class="p">.</span><span class="nx">password</span> <span class="o">&amp;&amp;</span> <span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="p">{{</span> <span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;red&#39;</span> <span class="p">}}&gt;{</span><span class="nx">errors</span><span class="p">.</span><span class="nx">password</span><span class="p">.</span><span class="nx">message</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span> <span class="na">disabled</span><span class="o">=</span><span class="p">{</span><span class="nx">isSubmitting</span><span class="p">}&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span><span class="nx">isSubmitting</span> <span class="o">?</span> <span class="s1">&#39;Checking...&#39;</span> <span class="o">:</span> <span class="s1">&#39;Submit&#39;</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">PasswordCheckForm</span><span class="p">;</span></span></span></code></pre></div>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+        
+
+        
+
+
+  
+      </div>
+     
+      
+      
+        
+        
+          
+          
+        
+      <script>
+        var oid = "views_articles\/instantly-gain-your-users-Trust-with-password-leak-detection-in-signup-forms\/index.md"
+        var oid_likes = "likes_articles\/instantly-gain-your-users-Trust-with-password-leak-detection-in-signup-forms\/index.md"
+      </script>
+      
+      
+      <script type="text/javascript" src="../../js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+      
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+
+
+    
+
+
+
+  </footer>
+
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      &copy;
+      2024
+      indra susila
+    </p>
+    
+
+    
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="../../js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 justify-end lg:justify-start pb-[10vh] pt-0 lg:pb-0 lg:pt-[20vh]"
+  data-url="http://localhost:1313/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg   border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0 ">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent focus:outline-none outline-none border-none focus:border-none focus:ring-0"
+          placeholder="Search articles here.. "
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        <li class="mb-2">
+          <a class="flex items-center px-3 py-2 rounded-md appearance-none bg-neutral-100 dark:bg-neutral-700 focus:bg-primary-100 hover:bg-primary-100 dark:hover:bg-primary-900 dark:focus:bg-primary-900 focus:outline-dotted focus:outline-transparent focus:outline-2" href="${value.item.permalink}" tabindex="0">
+            <div class="grow">
+              <div class="-mb-1 text-lg font-bold">${value.item.title}</div>
+              <div class="text-sm text-neutral-500 dark:text-neutral-400">${value.item.section}<span class="px-2 text-primary-500">&middot;</span>${value.item.date}</span></div>
+              <div class="text-sm italic">${value.item.summary}</div>
+            </div>
+            <div class="ml-2 ltr:block rtl:hidden text-neutral-500">&rarr;</div>
+            <div class="mr-2 ltr:hidden rtl:block text-neutral-500">&larr;</div>
+          </a>
+        </li> 
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>
