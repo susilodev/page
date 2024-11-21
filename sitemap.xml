@@ -3,13 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://susilodev.com/articles/</loc>
+    <loc>https://susilodev.com/blog/</loc>
     <lastmod>2024-11-16T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://susilodev.com/articles/instantly-gain-your-users-trust-with-password-leak-detection-in-signup-forms/</loc>
+    <loc>https://susilodev.com/blog/instantly-gain-your-users-trust-with-password-breach-detection-in-signup-forms/</loc>
     <lastmod>2024-11-16T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

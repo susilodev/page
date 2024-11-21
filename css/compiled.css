@@ -1434,6 +1434,10 @@ select {
   top:calc(100vh - 5.5rem)
 }
 
+.isolate {
+  isolation:isolate
+}
+
 .-z-10 {
   z-index:-10
 }
