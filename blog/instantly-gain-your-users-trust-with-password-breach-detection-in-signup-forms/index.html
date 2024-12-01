@@ -41,7 +41,7 @@
 
 
 
-  <link type="text/css" rel="stylesheet" href="../../css/main.bundle.min.ffea9e43dcd489cb7692eb46a80cf62bc5bf3fd61dfdc2adbd2c842289af102b81bef01761e5f32aad2545a170f938db8a0647f97c1220dac4fd69958b981b92.css?v=1732197159" integrity="sha512-/&#43;qeQ9zUict2kutGqAz2K8W/P9Yd/cKtvSyEIomvECuBvvAXYeXzKq0lRaFw&#43;TjbigZH&#43;XwSINrE/WmVi5gbkg==" />
+  <link type="text/css" rel="stylesheet" href="../../css/main.bundle.min.2584fc045ce06c9537e550dafb3691462431135c863e1278fb36fc7aeb2ca9ac9fdf573dd6c949f2204609ed851eaa40b9e80d8ed31d278f00bb1e74fee6dafd.css?v=1733029665" integrity="sha512-JYT8BFzgbJU35VDa&#43;zaRRiQxE1yGPhJ4&#43;zb8eussqayf31c91slJ8iBGCe2FHqpAuegNjtMdJ48Aux50/uba/Q==" />
 
   
   
@@ -87,7 +87,7 @@
   <meta property="og:title" content="Instantly Gain Your Users&#39; Trust with Password Breach Detection in Signup Forms">
   <meta property="og:description" content="">
   <meta property="og:url" content="https://susilodev.com/blog/instantly-gain-your-users-trust-with-password-breach-detection-in-signup-forms/">
-  <meta property="og:image" content="/images/security/pawned/thumbail-security-pawned.png">
+  <meta property="og:image" content="thumbail-security-pawned.png">
   <meta property="og:type" content="article">
 
   
@@ -105,8 +105,8 @@
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
-    <meta property="article:published_time" content="2024-11-16T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-11-16T00:00:00+00:00">
+    <meta property="article:published_time" content="2024-12-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-01T00:00:00+00:00">
     <meta property="article:tag" content="Security">
     <meta property="article:tag" content="Reactjs">
     <meta property="article:tag" content="Go">
@@ -135,15 +135,15 @@
       "name": "indra susila"
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-11-16T00:00:00\u002b00:00",
-    "datePublished": "2024-11-16T00:00:00\u002b00:00",
+    "dateCreated": "2024-12-01T00:00:00\u002b00:00",
+    "datePublished": "2024-12-01T00:00:00\u002b00:00",
     
-    "dateModified": "2024-11-16T00:00:00\u002b00:00",
+    "dateModified": "2024-12-01T00:00:00\u002b00:00",
     
     "keywords": ["security","reactjs","go","javascript","haveibeenpwned"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2187"
+    "wordCount": "3467"
   }]
   </script>
 
@@ -303,7 +303,6 @@
   </span>
 
 
-                  
                   <span class="hidden lg:flex text-sm ml-2 text-slate- dark:text-slate-300">or press "/"</span>
               </button>
               
@@ -514,7 +513,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-16T00:00:00&#43;00:00">16 November 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">11 mins</span>
+  <time datetime="2024-12-01T00:00:00&#43;00:00">1 December 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">17 mins</span>
   
 
   
@@ -724,6 +723,7 @@
   >
     <nav id="TableOfContents">
   <ul>
+    <li><a href="#-basic-info">#. Basic Info</a></li>
     <li><a href="#1-introduction">1. Introduction</a></li>
     <li><a href="#2-the-hidden-role-of-data-breaches-in-password-checks">2. The Hidden Role of Data Breaches in Password Checks</a>
       <ul>
@@ -733,7 +733,13 @@
     </li>
     <li><a href="#3-technical-implementation">3. Technical Implementation</a></li>
     <li><a href="#4-frontend-implementation-reactjs">4. Frontend Implementation (Reactjs)</a></li>
-    <li><a href="#5-backend-implementation-go--gin">5. Backend Implementation (Go + Gin)</a></li>
+    <li><a href="#5-backend-implementation-go-with-http-standar-lib">5. Backend Implementation (Go with http standar lib)</a>
+      <ul>
+        <li><a href="#51-converting-dataset-txt-to-sqlite">5.1 converting dataset .txt to sqlite</a></li>
+        <li><a href="#52-add-a-simple-router">5.2 add a simple router</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-conculision">6. Conculision</a></li>
   </ul>
 </nav>
   </div>
@@ -751,6 +757,7 @@
   >
     <nav id="TableOfContents">
   <ul>
+    <li><a href="#-basic-info">#. Basic Info</a></li>
     <li><a href="#1-introduction">1. Introduction</a></li>
     <li><a href="#2-the-hidden-role-of-data-breaches-in-password-checks">2. The Hidden Role of Data Breaches in Password Checks</a>
       <ul>
@@ -760,7 +767,13 @@
     </li>
     <li><a href="#3-technical-implementation">3. Technical Implementation</a></li>
     <li><a href="#4-frontend-implementation-reactjs">4. Frontend Implementation (Reactjs)</a></li>
-    <li><a href="#5-backend-implementation-go--gin">5. Backend Implementation (Go + Gin)</a></li>
+    <li><a href="#5-backend-implementation-go-with-http-standar-lib">5. Backend Implementation (Go with http standar lib)</a>
+      <ul>
+        <li><a href="#51-converting-dataset-txt-to-sqlite">5.1 converting dataset .txt to sqlite</a></li>
+        <li><a href="#52-add-a-simple-router">5.2 add a simple router</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-conculision">6. Conculision</a></li>
   </ul>
 </nav>
   </div>
@@ -843,17 +856,30 @@
         <div class="article-content max-w-prose mb-20">
           
 
+<h2 class="relative group">#. Basic Info 
+    <div id="-basic-info" class="anchor"></div>
+    
+</h2>
+<blockquote>
+<ol>
+<li><strong>This is a &ldquo;casual&rdquo; article that talks about how data breaches can be used as opportunities, based on how various tech industries are already making use of them.</strong></li>
+<li><strong>An in-depth technical guide on implementing a password breach checker for web applications using ReactJS and Go.</strong></li>
+</ol>
+</blockquote>
+
+
 <h2 class="relative group">1. Introduction 
     <div id="1-introduction" class="anchor"></div>
     
 </h2>
-<p>At present, not all users in the digital era realize the risks of data breaches. This is understandable, as not everyone pays attention to cybersecurity—even software engineers.</p>
+<p>At present, not all users in the digital era <strong>&ldquo;realize the risks&rdquo;</strong> of data breaches. This is understandable, as not everyone pays attention to cybersecurity—even software engineers.</p>
 <p><strong>But</strong> when it comes to passwords, it’s a completely different story.
 It doesn’t matter if someone is tech-savvy or not—passwords will always be a special concern for users.
+Even if they’re used to logging in with Gmail, they&rsquo;d still freak out if their password got leaked.
 Why? Because passwords are deeply personal.</p>
-<p>Even if you don’t use personal things for passwords, people tend to pick memorable words,
-even if they include special characters, which makes the combination stick in their mind for many years.
-And the worst-case scenario is the password is already known by someone else.</p>
+<p>For example, even if you don&rsquo;t use personal thing for your passwords <em>(which is good)</em>, you&rsquo;ll still tend to pick something memorable—
+whether it&rsquo;s a special character, a favorite anime character, or a combination that you hope will keep playing in your mind for years, maybe even for life.</p>
+<!-- ![thumbnail](thumbnail-security-pawned.png '') -->
 
 
 <h2 class="relative group">2. The Hidden Role of Data Breaches in Password Checks 
@@ -895,7 +921,7 @@ Mozilla, GitHub, and many others,</p>
 <p>I believe that password breach checking has the potential to make a deeply positive impact on users personally.
 It can positively influence user behavior,
 enhance the user experience, and address psychological concerns.</p>
-<p>Some people may be shocked when they realize their password has been exposed,
+<p>Some people may be triggered when they realize their password has been exposed,
 especially if they&rsquo;ve been using it for years.
 When your platform advises and forces them to change their password because it’s compromised and unsafe,
 if you make a positive impression at that moment,
@@ -990,8 +1016,11 @@ and Indonesia has seen a significant rise in data breaches
 <sup>[<a href="https://www.cyberlands.io/topsecuritybreachesindonesia" target="_blank">source</a>]</sup>,
 To make matters worse,
 the Indonesian government has faced serious data breach issues since July 2024 .
-<sup>[<a href="https://www.reuters.com/world/asia-pacific/indonesias-tax-agency-probes-alleged-personal-data-breach-2024-09-19/" target="_blank">source</a>]</sup>,
-The logical consequence of this chart is that data breaches in Q2 2024 should show a noticeable increase,
+<sup>[<a href="https://www.reuters.com/world/asia-pacific/indonesias-tax-agency-probes-alleged-personal-data-breach-2024-09-19/" target="_blank">source &amp;</a>]</sup>
+<sup>
+[<a href="https://x.com/secgron/status/1836296102011941348" target="_blank">hot news</a>]
+</sup></p>
+<p>The logical consequence of this chart is that data breaches in Q2 2024 should show a noticeable increase,
 making this case even more relevant and offering an opportunity to take advantage of the situation.</p>
 <blockquote>
 <p><sup><strong><em>again, this is  my personal opinion, and I don’t have many sources to back it up.</em></strong></sup></p>
@@ -1002,7 +1031,7 @@ making this case even more relevant and offering an opportunity to take advantag
     <div id="3-technical-implementation" class="anchor"></div>
     
 </h2>
-<p>We will use <strong>HIBP</strong> as a data library, and so far, we can do it in two ways:</p>
+<p>We will use <strong>HIBP</strong> as a dataset library, and so far, we can do it in two ways:</p>
 <ol>
 <li>Using the <a href="https://api.pwnedpasswords.com" target="_blank">HIBP API</a>. It&rsquo;s free to use, but has a rate limit. <strong>or</strong></li>
 <li>Self-hosting HIBP,
@@ -1042,7 +1071,7 @@ sequenceDiagram
     Note left of HIBP_Database: 7a58aa8664112d:1
     Note left of HIBP_Database: 7a58ab86641ec1:7
 
-    HIBP_API-->>Frontend: Respond with Matches
+    HIBP_API-->>Frontend: Respond with Matches as suffix list
     Note left of HIBP_API: 286641ec6:2
     Note left of HIBP_API: a8664112d:1
     Note left of HIBP_API: b86641ec1:7
@@ -1132,8 +1161,7 @@ sequenceDiagram
 
 </div>
 
-<p>untuk melakukan hash, mengirim dan melakukan compare kurang lebih kita akan melakukannya dengan
-logic sederhana di typescript seperti ini</p>
+<p>To hash, send, and compare, basically we’ll be using some simple logic in TypeScript like this.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1566,15 +1594,550 @@ logic sederhana di typescript seperti ini</p>
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    >
 </iframe>
+<blockquote>
+<p>Next up, we’re gonna keep setting up our self-hosted HIBP.
+For learning purpose, we’ll roll with Go and its standard HTTP library, —it’s simpler, easier to understand, and quicker to set up.</p>
+</blockquote>
 
 
-<h2 class="relative group">5. Backend Implementation (Go + Gin) 
-    <div id="5-backend-implementation-go--gin" class="anchor"></div>
+<h2 class="relative group">5. Backend Implementation (Go with http standar lib) 
+    <div id="5-backend-implementation-go-with-http-standar-lib" class="anchor"></div>
     
 </h2>
+<p>Since Go 1.22.1 was released with a <a href="https://www.youtube.com/watch?v=H7tbjKFSg58" target="_blank">fancy HTTP standard library update</a>, I personally prefer to use that instead of bringing in framework abstractions. Another good news is the performance; it&rsquo;s quite good. You can deep dive into benchmarking Go’s stdlib vs Gin vs Fiber in EKS Kubernetes <a href="https://www.youtube.com/watch?v=ok5DDDNsOaQ&amp;t=272s" target="_blank">here</a>. To get the password dataset from Have I Been Pwned, you need a subscription.
+You can sign up for it <a href="https://haveibeenpwned.com/API/Key" target="_blank">here</a>..</p>
 <blockquote>
-<p>To be Continued</p>
+<p>Without an API key, you won’t be able to download the dataset from HIBP.</p>
 </blockquote>
+<p>Officially, we can download it using this tool
+<a id="github-ab28f26ff808b77685b88c7c71fcd3fd" target="_blank" href="https://github.com/HaveIBeenPwned/PwnedPasswordsDownloader" class="cursor-pointer">
+  <div
+    class="w-full md:w-auto pt-3 p-5 border border-neutral-200 dark:border-neutral-700 border rounded-md shadow-2xl">
+
+    <div class="flex items-center">
+      <span class="text-2xl text-neutral-800 dark:text-neutral" style="margin-right:10px;">
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+  </span>
+
+
+      </span>
+      <div
+        id="github-ab28f26ff808b77685b88c7c71fcd3fd-full_name"
+        class="m-0 font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
+        HaveIBeenPwned/PwnedPasswordsDownloader
+      </div>
+    </div>
+
+    <p id="github-ab28f26ff808b77685b88c7c71fcd3fd-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
+      A tool to download all Pwned Passwords hash ranges and save them offline so they can be used without a dependency on the k-anonymity API
+    </p>
+
+    <div class="m-0 mt-2 flex items-center">
+
+      <span class="mr-1 inline-block h-3 w-3 rounded-full"
+        style="background-color: #178600"></span>
+      <div class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+         C# 
+      </div>
+
+      <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0L287.9 0zM287.9 78.95L235.4 187.2C231.9 194.3 225.1 199.3 217.3 200.5L98.98 217.9L184.9 303C190.4 308.5 192.9 316.4 191.6 324.1L171.4 443.7L276.6 387.5C283.7 383.7 292.2 383.7 299.2 387.5L404.4 443.7L384.2 324.1C382.9 316.4 385.5 308.5 391 303L476.9 217.9L358.6 200.5C350.7 199.3 343.9 194.3 340.5 187.2L287.9 78.95z"/></svg>
+  </span>
+
+
+      </span>
+      <div id="github-ab28f26ff808b77685b88c7c71fcd3fd-stargazers" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+        687
+      </div>
+
+      <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M80 104c13.3 0 24-10.7 24-24s-10.7-24-24-24S56 66.7 56 80s10.7 24 24 24zm80-24c0 32.8-19.7 61-48 73.3V192c0 17.7 14.3 32 32 32H304c17.7 0 32-14.3 32-32V153.3C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V192c0 53-43 96-96 96H256v70.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V288H144c-53 0-96-43-96-96V153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm208 24c13.3 0 24-10.7 24-24s-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24zM248 432c0-13.3-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24s24-10.7 24-24z"/></svg>
+  </span>
+
+
+      </span>
+      <div id="github-ab28f26ff808b77685b88c7c71fcd3fd-forks" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+        53
+      </div>
+
+    </div>
+
+  </div>
+  <script>
+    fetch("https://api.github.com/repos/HaveIBeenPwned/PwnedPasswordsDownloader", {
+      headers: new Headers({
+        'User-agent': 'Mozilla/4.0 Custom User Agent'
+      })
+    })
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('github-ab28f26ff808b77685b88c7c71fcd3fd-full_name').innerHTML = data.full_name;
+        document.getElementById('github-ab28f26ff808b77685b88c7c71fcd3fd-description').innerHTML = data.description;
+        document.getElementById('github-ab28f26ff808b77685b88c7c71fcd3fd-stargazers').innerHTML = data.stargazers_count;
+        document.getElementById('github-ab28f26ff808b77685b88c7c71fcd3fd-forks').innerHTML = data.forks;
+      })
+      .catch(error => console.error(error))
+  </script>
+</a></p>
+<p><strong>but</strong> if you&rsquo;re not familiar to <strong>#C</strong> or <strong>.net</strong>, you can use alternative tools like <strong><a href="threatpatrols/hibp-downloader">python</a></strong>, <strong><a href="easybill/easypwned">Rust</a></strong>, <strong><a href="wKovacs64/hibp">Nodejs</a></strong>, and <strong><a href="oyeaussie/PHPPwnedPasswordsDownloader">PHP</a></strong> . don&rsquo;t worry, the process and flow are pretty much the same across the board.
+And finally, you&rsquo;ll get a huge <code>.txt</code> file that contains the list of pwned passwords.</p>
+<blockquote>
+<p>
+
+  <span class="relative inline-block align-text-bottom icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-triangle-alert"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+
+  </span>
+
+ Beware! Don’t open the file with regular editors like VSCode or Neovim—it’ll take forever and might freeze your computer. You should use a specialized editor for handling huge files, like <a href="https://www.geeksforgeeks.org/less-command-linux-examples/" target="_blank">less</a>, <a href="https://klogg.filimonov.dev/" target="_blank">klogg</a>, or something similar.</p>
+</blockquote>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /blog/instantly-gain-your-users-trust-with-password-breach-detection-in-signup-forms/line-text_hu5085307412777288570.webp 330w,
+        /blog/instantly-gain-your-users-trust-with-password-breach-detection-in-signup-forms/line-text_hu16958251431785343306.webp 660w,
+        /blog/instantly-gain-your-users-trust-with-password-breach-detection-in-signup-forms/line-text_hu6470161550808511102.webp 1024w,
+        /blog/instantly-gain-your-users-trust-with-password-breach-detection-in-signup-forms/line-text_hu14730332914921150274.webp 2x"
+        src="../../blog/instantly-gain-your-users-trust-with-password-breach-detection-in-signup-forms/line-text_hu16958251431785343306.webp"
+        alt="havaibeenpawned online"
+      />
+      <figcaption>This is an example of a sliced line from the <code>.txt</code> HaveIBeenPwned list.</figcaption>
+    </figure>
+</p>
+
+
+<h3 class="relative group">5.1 converting dataset .txt to sqlite 
+    <div id="51-converting-dataset-txt-to-sqlite" class="anchor"></div>
+    
+</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Column Name</th>
+          <th>Data Type</th>
+          <th>Constraints</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>prefix</td>
+          <td>TEXT</td>
+          <td>NOT NULL, PRIMARY KEY</td>
+      </tr>
+      <tr>
+          <td>suffix</td>
+          <td>TEXT</td>
+          <td>NOT NULL, PRIMARY KEY</td>
+      </tr>
+      <tr>
+          <td>occurrences</td>
+          <td>INTEGER</td>
+          <td>NOT NULL</td>
+      </tr>
+  </tbody>
+</table>
+<p>Using OS &ldquo;file reads&rdquo; in Go is still fine, but sometimes we need a more maintainable solution. I prefer converting it to an SQLite database—it’s easier to work with and quite fast. We’ll need a script to transform the <code>.txt</code> file into SQLite.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">import</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl"> <span class="s">&#34;bufio&#34;</span>
+</span></span><span class="line"><span class="cl"> <span class="s">&#34;database/sql&#34;</span>
+</span></span><span class="line"><span class="cl"> <span class="s">&#34;log&#34;</span>
+</span></span><span class="line"><span class="cl"> <span class="s">&#34;os&#34;</span>
+</span></span><span class="line"><span class="cl"> <span class="s">&#34;strings&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="nx">_</span> <span class="s">&#34;github.com/mattn/go-sqlite3&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Open the text file containing the password hashes and their occurrences.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">file</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">os</span><span class="p">.</span><span class="nf">Open</span><span class="p">(</span><span class="s">&#34;../data/hibp_example.txt&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">defer</span> <span class="nx">file</span><span class="p">.</span><span class="nf">Close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">db</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">sql</span><span class="p">.</span><span class="nf">Open</span><span class="p">(</span><span class="s">&#34;sqlite3&#34;</span><span class="p">,</span> <span class="s">&#34;../data/hbip.db&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">defer</span> <span class="nx">db</span><span class="p">.</span><span class="nf">Close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">_</span><span class="p">,</span> <span class="nx">err</span> <span class="p">=</span> <span class="nx">db</span><span class="p">.</span><span class="nf">Exec</span><span class="p">(</span><span class="s">`CREATE TABLE IF NOT EXISTS pwned_passwords (
+</span></span></span><span class="line"><span class="cl"><span class="s">        prefix TEXT NOT NULL,
+</span></span></span><span class="line"><span class="cl"><span class="s">        suffix TEXT NOT NULL,
+</span></span></span><span class="line"><span class="cl"><span class="s">        occurrences INTEGER NOT NULL,
+</span></span></span><span class="line"><span class="cl"><span class="s">        PRIMARY KEY (prefix, suffix) 
+</span></span></span><span class="line"><span class="cl"><span class="s">    )`</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Begin a new database transaction to batch insert data for better performance.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">tx</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">db</span><span class="p">.</span><span class="nf">Begin</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Prepare an SQL statement to insert or ignore duplicate records into the table.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">stmt</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">tx</span><span class="p">.</span><span class="nf">Prepare</span><span class="p">(</span><span class="s">&#34;INSERT OR IGNORE INTO pwned_passwords (prefix, suffix, occurrences) VALUES (?, ?, ?)&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">defer</span> <span class="nx">stmt</span><span class="p">.</span><span class="nf">Close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Create a scanner to read the text file line by line.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">scanner</span> <span class="o">:=</span> <span class="nx">bufio</span><span class="p">.</span><span class="nf">NewScanner</span><span class="p">(</span><span class="nx">file</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="nx">scanner</span><span class="p">.</span><span class="nf">Scan</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">line</span> <span class="o">:=</span> <span class="nx">scanner</span><span class="p">.</span><span class="nf">Text</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">parts</span> <span class="o">:=</span> <span class="nx">strings</span><span class="p">.</span><span class="nf">Split</span><span class="p">(</span><span class="nx">line</span><span class="p">,</span> <span class="s">&#34;:&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// Skip lines that don&#39;t follow the expected format
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nx">parts</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">2</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nx">hash</span> <span class="o">:=</span> <span class="nx">parts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>                    <span class="c1">// The full hash value from the line
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">count</span> <span class="o">:=</span> <span class="nx">parts</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>                   <span class="c1">// The occurrence count from the line
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">        <span class="nx">prefix</span> <span class="o">:=</span> <span class="nx">hash</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>                  <span class="c1">// Extract the first 5 characters as the prefix
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">suffix</span> <span class="o">:=</span> <span class="nx">hash</span><span class="p">[</span><span class="mi">5</span><span class="p">:]</span>                  <span class="c1">// Extract the remaining characters as the suffix
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">        <span class="nx">_</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">stmt</span><span class="p">.</span><span class="nf">Exec</span><span class="p">(</span><span class="nx">prefix</span><span class="p">,</span> <span class="nx">suffix</span><span class="p">,</span> <span class="nx">count</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">log</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Failed to insert record: %v&#34;</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Commit the transaction to finalize the batch insert into the database.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">tx</span><span class="p">.</span><span class="nf">Commit</span><span class="p">();</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">log</span><span class="p">.</span><span class="nf">Fatalf</span><span class="p">(</span><span class="s">&#34;Failed to commit transaction: %v&#34;</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">log</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Data conversion completed.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>You need to run that script to prepare the dataset as an SQLite db.</p>
+<pre class="highlight"><code>go run scripts/text_to_sqlite.go</code></pre>
+
+
+<h3 class="relative group">5.2 add a simple router 
+    <div id="52-add-a-simple-router" class="anchor"></div>
+    
+</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">// main.go
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="nx">router</span> <span class="o">:=</span> <span class="nx">http</span><span class="p">.</span><span class="nf">NewServeMux</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nx">router</span><span class="p">.</span><span class="nf">HandleFunc</span><span class="p">(</span><span class="s">&#34;/api/v1/hibp&#34;</span><span class="p">,</span> <span class="nx">handler</span><span class="p">.</span><span class="nf">CheckHandler</span><span class="p">(</span><span class="nx">db</span><span class="p">))</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Maybe we need a separate package to make it reusable. It will contain functions for initializing the database and finding suffixes</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">database</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl"> <span class="s">&#34;database/sql&#34;</span>
+</span></span><span class="line"><span class="cl"> <span class="s">&#34;fmt&#34;</span>
+</span></span><span class="line"><span class="cl"> <span class="nx">_</span> <span class="s">&#34;github.com/mattn/go-sqlite3&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">DB</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"> <span class="o">*</span><span class="nx">sql</span><span class="p">.</span><span class="nx">DB</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">InitDatabase</span><span class="p">(</span><span class="nx">dbPath</span> <span class="kt">string</span><span class="p">)</span> <span class="p">(</span><span class="o">*</span><span class="nx">sql</span><span class="p">.</span><span class="nx">DB</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"> <span class="k">if</span> <span class="nx">dbPath</span> <span class="o">==</span> <span class="s">&#34;&#34;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="kc">nil</span><span class="p">,</span> <span class="nx">fmt</span><span class="p">.</span><span class="nf">Errorf</span><span class="p">(</span><span class="s">&#34;database path is empty&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="nx">db</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">sql</span><span class="p">.</span><span class="nf">Open</span><span class="p">(</span><span class="s">&#34;sqlite3&#34;</span><span class="p">,</span> <span class="nx">dbPath</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="kc">nil</span><span class="p">,</span> <span class="nx">fmt</span><span class="p">.</span><span class="nf">Errorf</span><span class="p">(</span><span class="s">&#34;failed to open database: %v&#34;</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="k">return</span> <span class="nx">db</span><span class="p">,</span> <span class="kc">nil</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// finding suffix base on prefix
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">func</span> <span class="nf">GetSuffixesByPrefix</span><span class="p">(</span><span class="nx">db</span> <span class="o">*</span><span class="nx">DB</span><span class="p">,</span> <span class="nx">prefix</span> <span class="kt">string</span><span class="p">)</span> <span class="p">([]</span><span class="kt">string</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"> <span class="nx">query</span> <span class="o">:=</span> <span class="s">`SELECT suffix FROM hibp WHERE prefix = ?`</span>
+</span></span><span class="line"><span class="cl"> <span class="nx">rows</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">db</span><span class="p">.</span><span class="nf">Query</span><span class="p">(</span><span class="nx">query</span><span class="p">,</span> <span class="nx">prefix</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="kc">nil</span><span class="p">,</span> <span class="nx">fmt</span><span class="p">.</span><span class="nf">Errorf</span><span class="p">(</span><span class="s">&#34;failed to query suffixes: %v&#34;</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> <span class="k">defer</span> <span class="nx">rows</span><span class="p">.</span><span class="nf">Close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="kd">var</span> <span class="nx">suffixes</span> <span class="p">[]</span><span class="kt">string</span>
+</span></span><span class="line"><span class="cl"> <span class="k">for</span> <span class="nx">rows</span><span class="p">.</span><span class="nf">Next</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">suffix</span> <span class="kt">string</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">rows</span><span class="p">.</span><span class="nf">Scan</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">suffix</span><span class="p">);</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="k">return</span> <span class="kc">nil</span><span class="p">,</span> <span class="nx">fmt</span><span class="p">.</span><span class="nf">Errorf</span><span class="p">(</span><span class="s">&#34;failed to scan suffix: %v&#34;</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">suffixes</span> <span class="p">=</span> <span class="nb">append</span><span class="p">(</span><span class="nx">suffixes</span><span class="p">,</span> <span class="nx">suffix</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="k">if</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">rows</span><span class="p">.</span><span class="nf">Err</span><span class="p">();</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="kc">nil</span><span class="p">,</span> <span class="nx">fmt</span><span class="p">.</span><span class="nf">Errorf</span><span class="p">(</span><span class="s">&#34;error iterating over rows: %v&#34;</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="k">return</span> <span class="nx">suffixes</span><span class="p">,</span> <span class="kc">nil</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>You can implement the database package in the router handler andBasically, I just made this project more simple and similar like <em><a href="https://hono.dev/" target="_blank">Hono/Express</a></em> framework.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">handler</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl"> <span class="s">&#34;database/sql&#34;</span>
+</span></span><span class="line"><span class="cl"> <span class="s">&#34;fmt&#34;</span>
+</span></span><span class="line"><span class="cl"> <span class="s">&#34;net/http&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// query handler
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">func</span> <span class="nf">CheckHandler</span><span class="p">(</span><span class="nx">db</span> <span class="o">*</span><span class="nx">sql</span><span class="p">.</span><span class="nx">DB</span><span class="p">)</span> <span class="nx">http</span><span class="p">.</span><span class="nx">HandlerFunc</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"> <span class="k">return</span> <span class="kd">func</span><span class="p">(</span><span class="nx">w</span> <span class="nx">http</span><span class="p">.</span><span class="nx">ResponseWriter</span><span class="p">,</span> <span class="nx">r</span><span class="o">*</span><span class="nx">http</span><span class="p">.</span><span class="nx">Request</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="nx">r</span><span class="p">.</span><span class="nx">Method</span> <span class="o">!=</span> <span class="nx">http</span><span class="p">.</span><span class="nx">MethodGet</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nx">http</span><span class="p">.</span><span class="nf">Error</span><span class="p">(</span><span class="nx">w</span><span class="p">,</span> <span class="s">&#34;Method not allowed&#34;</span><span class="p">,</span> <span class="nx">http</span><span class="p">.</span><span class="nx">StatusMethodNotAllowed</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">   <span class="k">return</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// fetch prefix from url query
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">prefix</span> <span class="o">:=</span> <span class="nx">r</span><span class="p">.</span><span class="nx">URL</span><span class="p">.</span><span class="nf">Query</span><span class="p">().</span><span class="nf">Get</span><span class="p">(</span><span class="s">&#34;prefix&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nx">prefix</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">5</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nx">http</span><span class="p">.</span><span class="nf">Error</span><span class="p">(</span><span class="nx">w</span><span class="p">,</span> <span class="s">&#34;Prefix must be exactly 5 characters&#34;</span><span class="p">,</span> <span class="nx">http</span><span class="p">.</span><span class="nx">StatusBadRequest</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">   <span class="k">return</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">rows</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">db</span><span class="p">.</span><span class="nf">Query</span><span class="p">(</span><span class="s">&#34;SELECT suffix, COUNT(*) FROM pwned_passwords WHERE prefix = ? GROUP BY suffix&#34;</span><span class="p">,</span> <span class="nx">prefix</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nx">http</span><span class="p">.</span><span class="nf">Error</span><span class="p">(</span><span class="nx">w</span><span class="p">,</span> <span class="s">&#34;Internal server error&#34;</span><span class="p">,</span> <span class="nx">http</span><span class="p">.</span><span class="nx">StatusInternalServerError</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">   <span class="k">return</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">defer</span> <span class="nx">rows</span><span class="p">.</span><span class="nf">Close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">result</span> <span class="kt">string</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="nx">rows</span><span class="p">.</span><span class="nf">Next</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="kd">var</span> <span class="nx">suffix</span> <span class="kt">string</span>
+</span></span><span class="line"><span class="cl">   <span class="kd">var</span> <span class="nx">occurrences</span> <span class="kt">int</span>
+</span></span><span class="line"><span class="cl">   <span class="k">if</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">rows</span><span class="p">.</span><span class="nf">Scan</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">suffix</span><span class="p">,</span> <span class="o">&amp;</span><span class="nx">occurrences</span><span class="p">);</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">http</span><span class="p">.</span><span class="nf">Error</span><span class="p">(</span><span class="nx">w</span><span class="p">,</span> <span class="s">&#34;Error scanning result&#34;</span><span class="p">,</span> <span class="nx">http</span><span class="p">.</span><span class="nx">StatusInternalServerError</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">   <span class="c1">// Ensure only the suffix is returned
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>   <span class="nx">result</span> <span class="o">+=</span> <span class="nx">fmt</span><span class="p">.</span><span class="nf">Sprintf</span><span class="p">(</span><span class="s">&#34;%s:%d\n&#34;</span><span class="p">,</span> <span class="nx">suffix</span><span class="p">,</span> <span class="nx">occurrences</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="nx">result</span> <span class="o">==</span> <span class="s">&#34;&#34;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nx">w</span><span class="p">.</span><span class="nf">WriteHeader</span><span class="p">(</span><span class="nx">http</span><span class="p">.</span><span class="nx">StatusNotFound</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">   <span class="nx">fmt</span><span class="p">.</span><span class="nf">Fprint</span><span class="p">(</span><span class="nx">w</span><span class="p">,</span> <span class="s">&#34;No suffix found&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">   <span class="k">return</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// returning text format as a response
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">w</span><span class="p">.</span><span class="nf">Header</span><span class="p">().</span><span class="nf">Set</span><span class="p">(</span><span class="s">&#34;Content-Type&#34;</span><span class="p">,</span> <span class="s">&#34;text/plain&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">w</span><span class="p">.</span><span class="nf">WriteHeader</span><span class="p">(</span><span class="nx">http</span><span class="p">.</span><span class="nx">StatusOK</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Fprint</span><span class="p">(</span><span class="nx">w</span><span class="p">,</span> <span class="nx">result</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>I also providing full source code at github, you can check it out [<a href="https://github.com/susilodev/mini-hbip" target="_blank">here</a>]. just make sure <code>Go 1.23</code> is installed on your machine cz I haven’t finished the Podman and Docker config yet.</p>
+
+
+<h2 class="relative group">6. Conculision 
+    <div id="6-conculision" class="anchor"></div>
+    
+</h2>
+<p>The budget for this implementation is cheap, even you can do it for free. maybe you&rsquo;ll got rate limits, but it&rsquo;s only affects the client network as a frontend. There is no significant impact on your server, <strong>except</strong> when you are running a self-hosted HBIP, which might incur some hosting costs.</p>
+<br>
+<br>
+<br>
+###
 
           
           
