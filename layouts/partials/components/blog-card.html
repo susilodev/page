@@ -1,37 +1,46 @@
-<div class="bg-body dark:bg-darkmode-body">
-  {{ $image:= .Params.image }}
-  {{ if $image }}
-    {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded") }}
-  {{ end }}
-  <h4 class="mb-3">
-    <a href="{{ .RelPermalink }}">
-      {{ .Title }}
-    </a>
-  </h4>
-  {{ $categories:= .Params.categories }}
-  {{ if $categories }}
-    <ul class="mb-4">
-      <li class="mr-4 inline-block">
-        <a href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
-          <i class="fa-regular fa-circle-user mr-2"></i>{{ .Params.author }}
-        </a>
-      </li>
-      <li class="mr-4 inline-block">
-        <i class="fa-regular fa-folder mr-1"></i>
-        {{ range $i,$p:= $categories }}
-          <a
-            href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
-            class="ms-1"
-            >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
-              {{ "," }}
-            {{ end }}
+<div
+  class="bg-body flex flex-col lg:flex-row w-full gap-x-5 dark:bg-darkmode-body ">
+  <div class="w-full lg:w-5/12">
+    {{ $image:= .Params.image }}
+    {{ if $image }}
+      {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded") }}
+    {{ end }}
+  </div>
+
+  <div class="w-full lg:w-7/12 flex flex-col">
+    <h4 class="text-2xl leading-10 line-clamp-3">
+      <a href="{{ .RelPermalink }}">
+        {{ .Title }}
+      </a>
+    </h4>
+
+    {{ $categories:= .Params.categories }}
+    {{ if $categories }}
+      <ul class="mb-4">
+        <li class="mr-4 inline-block">
+          <a href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
+            <i class="fa-regular fa-circle-user mr-2"></i>{{ .Params.author }}
           </a>
-        {{ end }}
-      </li>
-    </ul>
-  {{ end }}
-  <p class="mb-6">{{ .Summary | plainify }}</p>
-  <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
-    {{ T "read_more" }}
-  </a>
+        </li>
+        <li class="mr-4 inline-block">
+          <i class="fa-regular fa-folder mr-1"></i>
+          {{ range $i,$p:= $categories }}
+            <a
+              href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
+              class="ms-1"
+              >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
+                {{ "," }}
+              {{ end }}
+            </a>
+          {{ end }}
+        </li>
+      </ul>
+    {{ end }}
+    <p class="mt-6 text-lg line-clamp-3">{{ .Summary | plainify }}</p>
+    <a
+      class="mt-4 text-lg text-slate-50 hover:text-white pb-2 hover:font-bold"
+      href="{{ .RelPermalink }}">
+      {{ T "read_more" }}
+    </a>
+  </div>
 </div>

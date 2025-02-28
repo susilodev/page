@@ -6,7 +6,7 @@
   content="width=device-width, initial-scale=1, maximum-scale=5" />
 
 <!-- theme meta -->
-<meta name="theme-name" content="hugoplate" />
+<meta name="theme-name" content="susilodev" />
 
 <!-- favicon -->
 {{ partialCached "favicon" . }}
@@ -34,6 +34,8 @@
 {{ end }}
 
 
+<link rel="stylesheet" href="{{ "css/tailwind.css" | relURL }}" />
+
 <!-- google tag manager -->
 {{ partialCached "gtm.html" . }}
 
@@ -42,20 +44,11 @@
 {{ partial "search-index.html" . }}
 
 
-<!-- matomo analytics -->
-{{/* {{ partialCached "matomo-analytics.html" . }} */}}
-
-<!--  Baidu analytics -->
-{{/* {{ partialCached "baidu-analytics.html" . }} */}}
-
-<!-- Plausible Analytics -->
-{{/* {{ partialCached "plausible-analytics.html" . }} */}}
-
-<!-- Counter Analytics -->
-{{/* {{ partialCached "counter-analytics.html" . }} */}}
-
-<!-- Crisp Chat -->
-{{/* {{ partialCached "crisp-chat.html" . }} */}}
-
 <!-- Mermaid -->
-{{ partial "mermaid/assets/js" . }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.0/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+<!--chartjs -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js?chache=sr"></script>

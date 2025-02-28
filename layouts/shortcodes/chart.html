@@ -1,0 +1,12 @@
+<canvas id="chart-{{ .Get "id" }}"></canvas>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var ctx = document.getElementById("chart-{{ .Get "id" }}").getContext('2d');
+    new Chart(ctx, {
+      type: {{ .Get "type" | safeJS }},
+      data: {{ .Inner | safeJS }},
+      options: {{ .Get "options" | default "{}" | safeJS }}
+    });
+  });
+</script>
