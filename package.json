@@ -3,7 +3,7 @@
   "description": "susilodev blog",
   "version": "2.0.3",
   "license": "MIT",
-  "author": "indra susil",
+  "author": "indra susila",
   "scripts": {
     "dev": "hugo server",
     "watch:css": "npx tailwindcss -i ./assets/css/custom.css -o ./public/css/custom.css --watch",

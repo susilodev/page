@@ -4,28 +4,40 @@ on:
   push:
     branches:
       - main # Sesuaikan dengan branch utama repo kamu
-
   workflow_dispatch: # Memungkinkan menjalankan workflow secara manual di GitHub Actions
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # Gunakan versi x86_64, bukan ARM
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Setup Node.js (for Tailwind & dependencies)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Dependencies (Fix Unsupported Platform Issue)
+        run: |
+          npm install --force --ignore-scripts
 
       - name: Install Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "latest"
 
+      - name: Build Tailwind CSS (if applicable)
+        run: |
+          npx tailwindcss -i ./assets/css/custom.css -o ./static/css/custom.css
+
       - name: Build Hugo
-        run: hugo --minify
+        run: hugo --gc --minify --enableGitInfo
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          publish_branch: main # Branch tempat hasil build akan disimpan
+          publish_branch: gh-pages # Branch tempat hasil build akan disimpan

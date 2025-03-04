@@ -1,78 +1,43 @@
-# workflow for building and deploying to GitHub Pages
-name: Deploy susilodev pages
+name: Deploy Hugo to GitHub Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Default to bash
-defaults:
-  run:
-    shell: bash
-
-# Environment variables available to all jobs and steps in this workflow
-env:
-  HUGO_ENV: production
-  HUGO_VERSION: "0.141.0"
-  GO_VERSION: "1.23.3"
-  TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
-  TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
-  TINA_SEARCH_TOKEN: ${{ secrets.TINA_SEARCH_TOKEN }}
+    branches:
+      - main # Sesuaikan dengan branch utama repo kamu
+  workflow_dispatch: # Memungkinkan menjalankan workflow secara manual di GitHub Actions
 
 jobs:
-  # Build job
-  build:
-    runs-on: ubuntu-24.04-arm
-    steps:
-      - name: Install Hugo
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-arm64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-
-      - name: Install Go
-        run: |
-          wget -O ${{ runner.temp }}/go.deb https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz \
-          && sudo tar -C /usr/local -xzf ${{ runner.temp }}/go.deb
-
-      - name: Checkout
-        uses: actions/checkout@v4.2.2
-        with:
-          submodules: recursive
-          fetch-depth: 0
-
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-
-      - name: Setup Project
-        run: npm run project-setup
-
-      - name: Install npm dependencies
-        run: npm install
-
-      - name: Build site
-        run: npm run build
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3.0.1
-        with:
-          path: ./public
-
-  # Deployment job
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-24.04-arm
-    needs: build
+    runs-on: ubuntu-latest # Gunakan versi x86_64, bukan ARM
+
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js (for Tailwind & dependencies)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Dependencies (Fix Unsupported Platform Issue)
+        run: |
+          npm install --force --ignore-scripts
+
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"
+
+      - name: Build Tailwind CSS (if applicable)
+        run: |
+          npx tailwindcss -i ./assets/css/custom.css -o ./static/css/custom.css
+
+      - name: Build Hugo
+        run: hugo --gc --minify --enableGitInfo
+
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4.0.5
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages # Branch tempat hasil build akan disimpan
