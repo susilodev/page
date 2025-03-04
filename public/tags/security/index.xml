@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Hugoplate</title>
+    <link>//localhost:1313/tags/security/</link>
+    <description>Recent content in Security on Hugoplate</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instantly Gain Your Users&#39; Trust with Password Breach Detection in Signup Forms</title>
+      <link>//localhost:1313/blog/instantly-gain-your-users-trust-with-password-breach-detection-in-signup-forms/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/instantly-gain-your-users-trust-with-password-breach-detection-in-signup-forms/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;This is a &amp;ldquo;casual&amp;rdquo; article that talks about how data breaches can be used as opportunities, based on how various tech industries are already making use of them.&lt;/li&gt;&#xA;&lt;li&gt;An in-depth technical guide on implementing a password breach checker for web applications using ReactJS and Go.&lt;/li&gt;&#xA;&lt;/ol&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;At present, not all users in the digital era &lt;strong&gt;&amp;ldquo;realize the risks&amp;rdquo;&lt;/strong&gt; of data breaches. This is understandable, as not everyone pays attention to cybersecurity—even software engineers.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

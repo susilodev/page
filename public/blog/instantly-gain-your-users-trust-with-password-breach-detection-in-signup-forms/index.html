@@ -1,0 +1,1870 @@
+<!doctype html>
+<html
+  itemscope
+  class="dark"
+  lang="en-us"
+  itemtype="http://schema.org/WebPage">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <meta charset="utf-8" />
+
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=5" />
+
+
+<meta name="theme-name" content="susilodev" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/images/favicon_hu_7448bb17c8bef3e3.png" type="image/x-icon">
+<link rel="icon" href="/images/favicon_hu_7448bb17c8bef3e3.png" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon_hu_c8e8e4802643fe9b.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon_hu_7448bb17c8bef3e3.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon_hu_1a9f8f6c93f465d0.png">
+
+
+
+
+
+
+
+
+<link rel="manifest" href="/manifest.webmanifest" />
+<meta
+  name="msapplication-TileColor"
+  content="#ddd" />
+<meta
+  name="theme-color"
+  content="#ffffff" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <base href="//localhost:1313/blog/instantly-gain-your-users-trust-with-password-breach-detection-in-signup-forms/" />
+
+
+
+
+
+
+
+  
+
+
+<title>Instantly Gain Your Users&#39; Trust with Password Breach Detection in Signup Forms</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <meta
+    name="keywords"
+    content="javascript, fullstack, tailwindcss, reactjs, frontend  developer" />
+
+
+
+
+<meta
+  name="description"
+  content="adding extra feature at signup forms validation with Password Leak Detection" />
+
+
+
+  <meta name="author" content="susilodev" />
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+
+
+  
+  
+    
+    
+      
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+      
+        <meta property="og:image" content="//localhost:1313/images/password-branch/security-pawned.png" />
+        <meta name="twitter:image" content="//localhost:1313/images/password-branch/security-pawned.png" />
+        <meta
+          name="twitter:card"
+          content="summary_large_image" />
+      
+      
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="627" />
+    
+
+
+    
+    <meta
+      property="og:image:type"
+      content="image/.png" />
+  
+
+
+  
+
+
+
+
+
+<meta property="og:title" content="Instantly Gain Your Users&#39; Trust with Password Breach Detection in Signup Forms" />
+<meta property="og:description" content="adding extra feature at signup forms validation with Password Leak Detection" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="//localhost:1313/blog/instantly-gain-your-users-trust-with-password-breach-detection-in-signup-forms/" />
+
+
+<meta name="twitter:title" content="Instantly Gain Your Users&#39; Trust with Password Breach Detection in Signup Forms" />
+<meta name="twitter:description" content="adding extra feature at signup forms validation with Password Leak Detection" />
+
+
+  <meta name="twitter:site" content="@susilodev" />
+
+
+  <meta name="twitter:creator" content="@susilodev" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  let indexURL = "//localhost:1313/searchindex.json";
+  let includeSectionsInSearch = ["blog"];
+  let search_no_results = "No results for";
+  let search_initial_message = "Type something to search..";
+</script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.0/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js?chache=sr"></script>
+
+
+    
+  
+    
+    
+      
+        <link rel="stylesheet" href="/css/main.css" />
+      
+    
+  
+
+
+
+
+    
+    
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="preconnect" href="https://use.fontawesome.com" crossorigin />
+<link rel="preconnect" href="//cdnjs.cloudflare.com" />
+<link rel="preconnect" href="//www.googletagmanager.com" />
+<link rel="preconnect" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="https://use.fontawesome.com" />
+<link rel="dns-prefetch" href="//ajax.googleapis.com" />
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+<link rel="dns-prefetch" href="//www.googletagmanager.com" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//connect.facebook.net" />
+<link rel="dns-prefetch" href="//platform.linkedin.com" />
+<link rel="dns-prefetch" href="//platform.twitter.com" />
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script>
+  (function () {
+    const googleFont = document.createElement("link");
+    googleFont.href = "https://fonts.googleapis.com/css2?family=JetBrains Mono:wght@300;400;600;700&family=JetBrains Mono:wght@300;400;600;700&display=swap";
+    googleFont.type = "text/css";
+    googleFont.rel = "stylesheet";
+    document.head.appendChild(googleFont);
+  })();
+</script>
+
+<link rel="stylesheet" href="css/custom.css" />
+
+
+
+
+
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link
+  href="/css/style.css"
+  integrity=""
+  rel="stylesheet" />
+
+
+<link
+  defer
+  async
+  rel="stylesheet"
+  href="/css/style-lazy.css"
+  integrity=""
+  media="print"
+  onload="this.media='all'; this.onload=null;" />
+
+
+  </head>
+
+  <body>
+    
+    
+      
+
+
+
+
+
+      
+      <div
+  class="fixed left-0 top-0 z-50 flex w-[30px] items-center justify-center bg-gray-200 py-[2.5px] text-[12px] uppercase text-black sm:bg-red-200 md:bg-yellow-200 lg:bg-green-200 xl:bg-blue-200 2xl:bg-pink-200">
+  <span class="block sm:hidden">all</span>
+  <span class="hidden sm:block md:hidden">sm</span>
+  <span class="hidden md:block lg:hidden">md</span>
+  <span class="hidden lg:block xl:hidden">lg</span>
+  <span class="hidden xl:block 2xl:hidden">xl</span>
+  <span class="hidden 2xl:block">2xl</span>
+</div>
+
+    
+
+
+    
+    
+
+
+
+
+
+    
+    <header
+  class="header sticky top-0 z-30">
+  <nav class="navbar container">
+    
+    <div class="order-0">
+      
+      <a class="navbar-brand block" href="/">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  susilodev
+
+
+      </a>
+    </div>
+    
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      for="nav-toggle"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-black dark:text-white lg:order-1">
+      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+        <title>Menu Open</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+      </svg>
+      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+        <title>Menu Close</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"></polygon>
+      </svg>
+    </label>
+    
+
+    
+    <ul
+      id="nav-menu"
+      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8">
+      
+      
+        
+        
+        
+        
+          <li class="nav-item">
+            <a
+              class="nav-link "
+              
+              href="/portfolio"
+              >Portfolio</a
+            >
+          </li>
+        
+      
+        
+        
+        
+        
+          <li class="nav-item">
+            <a
+              class="nav-link "
+              
+              href="/blog"
+              >Ethical Hacking Blogs</a
+            >
+          </li>
+        
+      
+
+    </ul>
+
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+      
+        
+          <button
+            aria-label="search"
+            
+              class="border-border text-black hover:text-primary
+              dark:border-darkmode-border mr-5 inline-block border-r pr-5
+              text-xl dark:text-white dark:hover:text-darkmode-primary "
+            
+            data-target="search-modal">
+            <i class="fa-solid fa-search"></i>
+          </button>
+        
+      
+
+      
+
+      
+
+
+
+    </div>
+  </nav>
+</header>
+
+    
+
+
+
+
+  
+    <div
+      class="search-modal "
+      aria-hidden="true"
+      style="--color-primary: #121212">
+      <div data-target="close-search-modal" class="search-modal-overlay"></div>
+      <div
+        class="search-wrapper"
+        data-image="true"
+        data-description="true"
+        data-tags="true"
+        data-categories="true">
+        <div class="search-wrapper-header">
+          <label for="search-modal-input" style="margin-top:-1px">
+            <span class="sr-only">search icon</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              height="18"
+              width="18"
+              class="search-icon"
+              data-type="search">
+              <path
+                fill="currentColor"
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              height="18"
+              width="18"
+              class="search-reset"
+              data-type="reset">
+              <path
+                fill="currentColor"
+                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" />
+            </svg>
+          </label>
+          <input
+            id="search-modal-input"
+            type="text"
+            data-search-input
+            autocomplete="off"
+            aria-label="Search"
+            placeholder="Search Post..." />
+        </div>
+        <div class="search-wrapper-body">
+          <div class="search-result" data-search-result></div>
+          <span class="search-result-empty">
+            Type something to search..
+          </span>
+        </div>
+        <div class="search-wrapper-footer">
+          <span>
+            <kbd>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="currentColor"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z" />
+              </svg>
+            </kbd>
+            <kbd>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="currentColor"
+                style="margin-top:1px;"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
+              </svg>
+            </kbd>
+            to navigate
+          </span>
+          <span>
+            <kbd>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                fill="currentColor"
+                style="display:inline-block;"
+                viewBox="0 0 16 16">
+                <path
+                  fill-rule="evenodd"
+                  d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z" />
+              </svg>
+            </kbd>
+            to select
+          </span>
+          <span class="search-result-info"></span>
+          <span data-target="close-search-modal">
+            <kbd>ESC</kbd> to close
+          </span>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+
+    <main>
+      
+  <section class="section pt-7 mx-auto">
+    <div
+      class="flex justify-between w-full flex-col lg:flex-row container lg:gap-8">
+      <section class="w-full lg:w-6/12">
+        <article class="w-full">
+          
+          
+            <div class="mb-10 pt-4">
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+
+        
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <picture>
+          <source
+            
+              srcset="/images/password-branch/security-pawned_hu_bf048e54d53be729.webp"
+            
+            media="(max-width: 575px)" />
+          <source
+            
+              srcset="/images/password-branch/security-pawned_hu_f53f83b0662eab89.webp"
+            
+            media="(max-width: 767px)" />
+          <source
+            
+              srcset="/images/password-branch/security-pawned_hu_f5ed316da91c9a8b.webp"
+            
+            media="(max-width: 991px)" />
+          <source
+            
+              srcset="/images/password-branch/security-pawned_hu_2c4a0b605e429a59.webp"
+             />
+          <img
+            
+              loading="lazy" decoding="async"
+              src="/images/password-branch/security-pawned_hu_a499c53901969ab9.png"
+            class=" w-full rounded img"
+            alt="Instantly Gain Your Users&#39; Trust with Password Breach Detection in Signup Forms"
+            width="1200"
+            height="627" />
+        </picture>
+      
+      
+    
+    
+  
+
+
+  
+
+
+            </div>
+          
+          <h1 class="h2 mb-4">
+            Instantly Gain Your Users&#39; Trust with Password Breach Detection in Signup Forms
+          </h1>
+          <ul class="mb-4">
+            <li class="mr-4 inline-block">
+              <a
+                href="/authors/indra-susila/">
+                <i class="fa-regular fa-circle-user mr-2"></i
+                >Indra Susila
+              </a>
+            </li>
+            
+            
+            <li class="mr-4 inline-block">
+              <i class="fa-regular fa-clock mr-2"></i>
+              February 1, 2025
+            </li>
+          </ul>
+          <div class="content flex lg:hidden mb-10">
+            
+
+ 
+  
+
+<details open class="table-of-content blog">
+  <summary>
+    
+      Table of Contents
+    
+  </summary>
+  <nav id="TableOfContents">
+  <ol>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#the-hidden-role-of-data-breaches-in-password-checks">The Hidden Role of Data Breaches in Password Checks</a>
+      <ol>
+        <li><a href="#haveibeenpwned-hibp">haveibeenpwned (HIBP)</a></li>
+        <li><a href="#pragmatic-analysis">Pragmatic Analysis</a></li>
+      </ol>
+    </li>
+    <li><a href="#technical-implementation">Technical Implementation</a></li>
+    <li><a href="#frontend-implementation-reactjs">Frontend Implementation (Reactjs)</a></li>
+    <li><a href="#backend-implementation-go-with-http-standar-lib">Backend Implementation (Go with http standar lib)</a>
+      <ol>
+        <li><a href="#converting-dataset-txt-to-sqlite">converting dataset .txt to sqlite</a></li>
+        <li><a href="#add-a-simple-router">add a simple router</a></li>
+      </ol>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ol>
+</nav>
+</details>
+
+          </div>
+
+          <div class="content flex flex-col mb-10">
+            <blockquote>
+<ol>
+<li>This is a &ldquo;casual&rdquo; article that talks about how data breaches can be used as opportunities, based on how various tech industries are already making use of them.</li>
+<li>An in-depth technical guide on implementing a password breach checker for web applications using ReactJS and Go.</li>
+</ol></blockquote>
+<h2 id="introduction">Introduction</h2>
+<p>At present, not all users in the digital era <strong>&ldquo;realize the risks&rdquo;</strong> of data breaches. This is understandable, as not everyone pays attention to cybersecurity—even software engineers.</p>
+<p><strong>But</strong> when it comes to passwords, it’s a completely different story.
+It doesn’t matter if someone is tech-savvy or not—passwords will always be a special concern for users.
+Even if they’re used to logging in with Gmail, they&rsquo;d still freak out if their password got leaked.
+Why? Because passwords are deeply personal.</p>
+<p>For example, even if you don&rsquo;t use personal thing for your passwords <em>(which is good)</em>, you&rsquo;ll still tend to pick something memorable—
+whether it&rsquo;s a special character, a favorite anime character, or a combination that you hope will keep playing in your mind for years, maybe even for life.</p>
+<!-- ![thumbnail](thumbnail-security-pawned.png '') -->
+<h2 id="the-hidden-role-of-data-breaches-in-password-checks">The Hidden Role of Data Breaches in Password Checks</h2>
+<p>Data breaches have been happening for over a decade, affecting major companies like Adobe, Twitter, Facebook, Gmail, Canva, Tokopedia, and more.
+<sup>[<a href="https://haveibeenpwned.com/PwnedWebsites"
+
+
+
+
+ target="_blank"
+ 
+
+
+>source</a>]</sup> <br></p>
+<p>While web security becomes more complicated, some developers take advantage of data breaches and use them for extra features as a warning
+&ldquo;the user data has been exposed&rdquo;. It is advised not to reuse it for security reasons.</p>
+<h3 id="haveibeenpwned-hibp">haveibeenpwned (HIBP)</h3>
+<p>As far as I know, the only publicly accessible source for data breaches is <a href="https://haveibeenpwned.com/"
+
+
+
+
+ target="_blank"
+ 
+
+
+>HaveIBeenPwned</a> <em>(CMIIW)</em>.
+In fact, almost all paid security services are integrated with it.
+HaveIBeenPwned allows to search across multiple data breaches from various domains.
+It was created by <a href="https://haveibeenpwned.com/About"
+
+
+
+
+ target="_blank"
+ 
+
+
+><em>Troy Hunt</em></a>, a cybersecurity expert who also serves as a Microsoft Regional Director.
+To date, more than 1 billion breached passwords have been collected and integrated into services like 1Password,
+Mozilla, GitHub, and many others,</p>
+<p><img src="/images/password-branch/hbip-screen.png" alt="havaibeenpawned online" title="haveibeenpawned online tools, you can try for yourself at [this](https://haveibeenpwned.com/Passwords)"></p>
+<p>I believe that password breach checking has the potential to make a deeply positive impact on users personally.
+It can positively influence user behavior,
+enhance the user experience, and address psychological concerns.</p>
+<p>Some people may be triggered when they realize their password has been exposed,
+especially if they&rsquo;ve been using it for years.
+When your platform advises and forces them to change their password because it’s compromised and unsafe,
+if you make a positive impression at that moment,
+they will certainly feel greatly assisted and may even update their password on other platforms. And that means,
+it’s not just the new password they will remember, but also your product.
+and <strong>That’s it</strong>. That is the expected behavior.</p>
+
+
+
+  
+
+
+
+
+
+  
+
+
+<div class="notice info">
+  <div class="notice-head"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="22" height="22">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+      </svg><p>Info</p>
+  </div>
+  <div class="notice-body"><p>this is just my personal opinion, and I don’t have many sources to back it up.</p></div>
+</div>
+
+<p><img src="github-hbip-ss.gif" alt="github using password breach detection" title="Github is already using password breach checking &lt;sup&gt;[[source](https://github.com/signup)]&lt;/sup&gt;"></p>
+<h3 id="pragmatic-analysis">Pragmatic Analysis</h3>
+<p>In another case, if you&rsquo;re familiar with <em>Hostinger.com</em> (a cloud hosting provider),
+you&rsquo;ll notice that there&rsquo;s no data breach checking during signup on that domain.
+However, if you buy the product from Hostinger Indonesia (hostinger.co.id),
+you&rsquo;ll find that password breach checking is applied.
+It’s interesting to see this difference: <br>
+while both domains belong to the same company, but Indonesian domain offers an additional feature.</p>
+<p><img src="hostinger-id-check.png" alt="hostinger data check" title="_hostinger.co.id_ is already using breach checking &lt;sup&gt;[[source]](https://www.hostinger.co.id/)&lt;/sup&gt;"></p>
+<p>In my opinion, Hostinger has really played its role well in Indonesia.
+If you&rsquo;re truly aware of the situation in Indonesia, you&rsquo;d know that over the past 3 years,
+many incidents related to cybersecurity and data breaches have occurred.</p>
+<canvas id="chart-breachChart"></canvas>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var ctx = document.getElementById("chart-breachChart").getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: 
+{
+"labels": ["Q1 2021", "Q2 2021", "Q3 2021", "Q4 2021", "Q1 2022", "Q2 2022", "Q3 2022", "Q4 2022", "Q1 2023"],
+"datasets": [
+{
+"label": "Indonesian Data Breach",
+"data": [1339.4, 699.47, 1581.16, 492.16, 430.18, 902.14, 13260.29, 251.07, 89.11],
+"borderColor": "rgb(255, 99, 132)",
+"backgroundColor": "rgba(255, 99, 132, 0.2)"
+}
+]
+}
+,
+      options: {}
+    });
+  });
+</script>
+
+<p class="text-xs text-center">
+  indonesian data breach by <bold><a href="https://www.statista.com/statistics/1411281/indonesia-quarterly-number-of-data-breaches/" target="_blank">statistica</a></bold>
+</p>
+<p>The chart above shows data from 2021 to 2023,
+and Indonesia has seen a significant rise in data breaches
+<sup>[<a href="https://www.cyberlands.io/topsecuritybreachesindonesia"
+
+
+
+
+ target="_blank"
+ 
+
+
+>source</a>]</sup>,
+To make matters worse,
+the Indonesian government has faced serious data breach issues since July 2024 .
+<sup>[<a href="https://www.reuters.com/world/asia-pacific/indonesias-tax-agency-probes-alleged-personal-data-breach-2024-09-19/"
+
+
+
+
+ target="_blank"
+ 
+
+
+>source &amp;</a>]</sup>
+<sup>
+[<a href="https://x.com/secgron/status/1836296102011941348"
+
+
+
+
+ target="_blank"
+ 
+
+
+>hot news</a>]
+</sup></p>
+<p>The logical consequence of this chart is that data breaches in Q2 2024 should show a noticeable increase,
+making this case even more relevant and offering an opportunity to take advantage of the situation.</p>
+
+
+
+  
+
+
+
+
+
+  
+
+
+<div class="notice info">
+  <div class="notice-head"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="22" height="22">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+      </svg><p>Info</p>
+  </div>
+  <div class="notice-body"><p>again, this is my personal opinion, and I don’t have many sources to back it up.</p></div>
+</div>
+
+<h2 id="technical-implementation">Technical Implementation</h2>
+<p>We will use <strong>HIBP</strong> as a dataset library, and so far, we can do it in two ways:</p>
+<ol>
+<li>Using the <a href="https://api.pwnedpasswords.com"
+
+
+
+
+ target="_blank"
+ 
+
+
+>HIBP API</a>. It&rsquo;s free to use, but has a rate limit. <strong>or</strong></li>
+<li>Self-hosting HIBP,
+we need to download the password breach list and host it on our server.
+<br></li>
+</ol>
+<p>For privacy reasons, HIBP uses <a href="https://epic.org/wp-content/uploads/privacy/reidentification/Samarati_Sweeney_paper.pdf"
+
+
+
+
+ target="_blank"
+ 
+
+
+>K-Anatomy</a>.
+this means that the password is not sent to the server in plain text.
+we need to hash the password before sending it to the server. The password is hashed using the <strong>SHA-1</strong> algorithm.</p>
+<p>In general, the flow is roughly like this.</p>
+<div class="mermaid bg-white" id="mermaid-1741056092984863000">
+  
+sequenceDiagram
+autonumber
+box rgb(248, 255, 240) Frontend
+actor User
+participant Frontend
+end
+box rgb(245, 251, 255) Backend
+participant HIBP_API
+participant HIBP_Database
+end
+
+    User->>Frontend: Enter plain text Password
+    Note right of User: sukses100%
+
+    Frontend->>Frontend: Hash Password (SHA-1)
+    Note right of Frontend: 7a58a286641ec6
+
+    Frontend->>HIBP_API: Send First 5 Characters of Hash (Prefix)
+    Note right of Frontend: 7a58a
+
+    HIBP_API->>HIBP_Database: Query Prefix
+
+    HIBP_Database-->>HIBP_API: Return list of Matching Hashes
+    Note left of HIBP_Database: 7a58a286641ec6:2
+    Note left of HIBP_Database: 7a58aa8664112d:1
+    Note left of HIBP_Database: 7a58ab86641ec1:7
+
+    HIBP_API-->>Frontend: Respond with Matches as suffix list
+    Note left of HIBP_API: 286641ec6:2
+    Note left of HIBP_API: a8664112d:1
+    Note left of HIBP_API: b86641ec1:7
+
+    Frontend->>Frontend: Compare Full Hash Locally
+    Frontend-->>User: Notify if Compromised
+
+
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof mermaid !== "undefined") {
+      mermaid.initialize({
+        startOnLoad: true,
+      });
+      mermaid.init(undefined, document.getElementById("mermaid-1741056092984863000"));
+    }
+  });
+</script>
+
+<ol>
+<li>
+<p>The password is <strong>sukses100%</strong> as a plaintext, and</p>
+</li>
+<li>
+<p>Frontend is hashed into a SHA-1 hash like:</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>7a58a286641ec6</span></span></code></pre></div>
+<ol start="3">
+<li>
+<p>The first 5 characters of the hash (called the prefix) are extracted as <strong>7a58a</strong>.
+this prefix is sent to the HIBP API to query for possible matches.</p>
+</li>
+<li>
+<p>The HIBP API server sends a prefix query to the HIBP database to find matching hashes.</p>
+</li>
+<li>
+<p>If a match is found, the HIBP database returns a all hash list of matching hashes with <strong>pawned counts</strong> info.
+pawned count is The numbers after each hash, represent the number of times that password was seen in breaches.
+example response:</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>7a58a286641ec6:2
+</span></span><span style="display:flex;"><span>7a58aa8664112d:1
+</span></span><span style="display:flex;"><span>7a58ab86641ec1:7
+</span></span><span style="display:flex;"><span>7a58aj86641ec1:5
+</span></span><span style="display:flex;"><span>7a58ag86641ab3:10
+</span></span><span style="display:flex;"><span>7a58al86641123:14</span></span></code></pre></div>
+<ol start="6">
+<li>The server receives the matching hashes and filters them to send <strong>only the hash suffixes</strong> to the frontend, ensuring privacy.
+example response:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>286641ec6:2
+</span></span><span style="display:flex;"><span>a8664112d:1
+</span></span><span style="display:flex;"><span>b86641ec1:7
+</span></span><span style="display:flex;"><span>j86641ec1:5
+</span></span><span style="display:flex;"><span>g86641ab3:10
+</span></span><span style="display:flex;"><span>l86641123:14</span></span></code></pre></div>
+<ol start="7">
+<li>The client receives the list of possible matches and compares the suffix hash of the user&rsquo;s password to the list of returned suffix hashes.</li>
+<li>If a match is found, the user is alerted that their password is compromised and should be changed.</li>
+</ol>
+<h2 id="frontend-implementation-reactjs">Frontend Implementation (Reactjs)</h2>
+<div class="mermaid bg-white" id="mermaid-1741056092985333000">
+  
+sequenceDiagram
+box rgb(248, 255, 240) Frontend
+actor User
+participant Frontend as Nextjs/Remix
+end
+participant HIBP_API
+
+    User->>Frontend: Enter plain text Password
+    Note right of User: sukses100%
+
+    Frontend->>Frontend: Hash Password (SHA-1)
+    Note right of Frontend: 7a58a286641ec6...
+
+    Frontend->>HIBP_API: Send First 5 Characters of Hash (Prefix)
+    Note right of Frontend: 7a58a
+
+    HIBP_API-->>Frontend: Respond with Matches
+    Note left of HIBP_API: 286641ec6:2
+    Note left of HIBP_API: 286641121:1
+    Note left of HIBP_API: 286641129:7
+
+
+    Frontend->>Frontend: Compare Full Hash Locally
+    Frontend-->>User: Notify if Compromised
+
+
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof mermaid !== "undefined") {
+      mermaid.initialize({
+        startOnLoad: true,
+      });
+      mermaid.init(undefined, document.getElementById("mermaid-1741056092985333000"));
+    }
+  });
+</script>
+
+<p>To hash, send, and compare, basically we’ll be using some simple logic in TypeScript like this.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span><span style="color:#ff79c6">import</span> sha1 <span style="color:#ff79c6">from</span> <span style="color:#f1fa8c">&#34;sha1&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4">* Checks if a password is safe using the HIBP API.
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4">* @param password The password to check.
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4">* @returns Promise&lt;boolean&gt; - `true` if the password is safe, `false` if it is compromised.
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"> */</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">export</span> <span style="color:#ff79c6">async</span> <span style="color:#8be9fd;font-style:italic">function</span> isPasswordSafety(password: <span style="color:#8be9fd">string</span>)<span style="color:#ff79c6">:</span> Promise&lt;<span style="color:#ff79c6">boolean</span>&gt; {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">try</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Step 1: Hash the password using SHA1
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">const</span> hashedPassword <span style="color:#ff79c6">=</span> sha1(password);
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">const</span> prefix <span style="color:#ff79c6">=</span> hashedPassword.substring(<span style="color:#bd93f9">0</span>, <span style="color:#bd93f9">5</span>); <span style="color:#6272a4">// First 5 characters of the hash
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">const</span> suffix <span style="color:#ff79c6">=</span> hashedPassword.substring(<span style="color:#bd93f9">5</span>); <span style="color:#6272a4">// Remaining characters of the hash
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Step 2: Fetch data from HIBP API for the hash prefix
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">const</span> response <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">await</span> fetch(<span style="color:#f1fa8c">`https://api.pwnedpasswords.com/range/</span><span style="color:#f1fa8c">${</span>prefix<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">`</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Step 3: Check if the response is successful
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">if</span> (<span style="color:#ff79c6">!</span>response.ok) {
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">throw</span> <span style="color:#ff79c6">new</span> <span style="color:#8be9fd;font-style:italic">Error</span>(<span style="color:#f1fa8c">`Failed to fetch: </span><span style="color:#f1fa8c">${</span>response.status<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c"> - </span><span style="color:#f1fa8c">${</span>response.statusText<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">`</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Step 4: Extract the list of hashes and pawned counts
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">const</span> data <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">await</span> response.text();
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">const</span> hashes <span style="color:#ff79c6">=</span> data.split(<span style="color:#f1fa8c">&#34;\n&#34;</span>); <span style="color:#6272a4">// Split response into individual hash entries
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Step 5: Find the hash suffix in the returned list
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">const</span> foundEntry <span style="color:#ff79c6">=</span> hashes.find((hash) <span style="color:#ff79c6">=&gt;</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">const</span> [hashSuffix] <span style="color:#ff79c6">=</span> hash.split(<span style="color:#f1fa8c">&#34;:&#34;</span>); <span style="color:#6272a4">// Extract the hash suffix
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>      <span style="color:#ff79c6">return</span> hashSuffix.toLowerCase() <span style="color:#ff79c6">===</span> suffix.toLowerCase(); <span style="color:#6272a4">// Compare suffixes (case-insensitive)
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Step 6: Return true if no entry is found, otherwise false
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">return</span> foundEntry <span style="color:#ff79c6">===</span> <span style="color:#ff79c6">undefined</span>; <span style="color:#6272a4">// Safe if no match is found
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>
+</span></span><span style="display:flex;"><span>    } <span style="color:#ff79c6">catch</span> (error) {
+</span></span><span style="display:flex;"><span>    console.error(<span style="color:#f1fa8c">&#34;Error checking password:&#34;</span>, error);
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Treat any error as a signal that the password might not be safe
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">return</span> <span style="color:#ff79c6">false</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>we can use this hook in our component</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span><span style="color:#6272a4">// SignUpForm.tsx
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">import</span> { useForm } <span style="color:#ff79c6">from</span> <span style="color:#f1fa8c">&#34;react-hook-form&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">import</span> PasswordShowBtn <span style="color:#ff79c6">from</span> <span style="color:#f1fa8c">&#34;./components/PasswordShowBtn&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">import</span> { password_validation } <span style="color:#ff79c6">from</span> <span style="color:#f1fa8c">&#34;./schema/password_validation&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">import</span> { usePasswordSafety } <span style="color:#ff79c6">from</span> <span style="color:#f1fa8c">&#34;./hooks/usePasswordSafety&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">interface</span> IFormInput {
+</span></span><span style="display:flex;"><span>  password: <span style="color:#8be9fd">string</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">function</span> App() {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">const</span> [showPassword, setShowPassword] <span style="color:#ff79c6">=</span> useState(<span style="color:#ff79c6">false</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">const</span> { status, error, isLoading, numberOfPawned, isPasswordSafety } <span style="color:#ff79c6">=</span>
+</span></span><span style="display:flex;"><span>    usePasswordSafety();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">const</span> {
+</span></span><span style="display:flex;"><span>    register,
+</span></span><span style="display:flex;"><span>    handleSubmit,
+</span></span><span style="display:flex;"><span>    formState<span style="color:#ff79c6">:</span> { errors },
+</span></span><span style="display:flex;"><span>  } <span style="color:#ff79c6">=</span> useForm&lt;<span style="color:#ff79c6">IFormInput</span>&gt;({
+</span></span><span style="display:flex;"><span>    defaultValues<span style="color:#ff79c6">:</span> {
+</span></span><span style="display:flex;"><span>      password<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">const</span> togglePasswordVisibility <span style="color:#ff79c6">=</span> () <span style="color:#ff79c6">=&gt;</span> {
+</span></span><span style="display:flex;"><span>    setShowPassword((prev) <span style="color:#ff79c6">=&gt;</span> <span style="color:#ff79c6">!</span>prev);
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">const</span> onSubmit <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">async</span> (data: <span style="color:#8be9fd">IFormInput</span>) <span style="color:#ff79c6">=&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// When the form is submitted, check the password with the API
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">await</span> isPasswordSafety(data.password);
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">return</span> (
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#ff79c6">form</span> <span style="color:#50fa7b">onSubmit</span><span style="color:#ff79c6">=</span>{handleSubmit(onSubmit)}&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">input</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#50fa7b">type</span><span style="color:#ff79c6">=</span>{showPassword <span style="color:#ff79c6">?</span> <span style="color:#f1fa8c">&#34;text&#34;</span> <span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;password&#34;</span>} <span style="color:#6272a4">// Toggle antara password dan text
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>          <span style="color:#50fa7b">placeholder</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Password&#34;</span>
+</span></span><span style="display:flex;"><span>          {<span style="color:#50fa7b">...register</span>(<span style="color:#f1fa8c">&#34;password&#34;</span>, <span style="color:#50fa7b">password_validation</span>)}
+</span></span><span style="display:flex;"><span>          <span style="color:#50fa7b">defaultValue</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        /&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        {errors.password <span style="color:#ff79c6">&amp;&amp;</span> &lt;<span style="color:#ff79c6">p</span>&gt;{errors.password.message}&lt;/<span style="color:#ff79c6">p</span>&gt;}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">PasswordShowBtn</span> <span style="color:#50fa7b">type</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;button&#34;</span> <span style="color:#50fa7b">onClick</span><span style="color:#ff79c6">=</span>{togglePasswordVisibility}&gt;
+</span></span><span style="display:flex;"><span>          {showPassword <span style="color:#ff79c6">?</span> <span style="color:#f1fa8c">&#34;Hide&#34;</span> <span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Show&#34;</span>}
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#ff79c6">PasswordShowBtn</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#ff79c6">button</span> <span style="color:#50fa7b">disabled</span><span style="color:#ff79c6">=</span>{isLoading} <span style="color:#50fa7b">type</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;submit&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        {isLoading <span style="color:#ff79c6">?</span> <span style="color:#f1fa8c">&#34;Checking password...&#34;</span> <span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Submit&#34;</span>}
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#ff79c6">button</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      {<span style="color:#6272a4">/* Show result or error */</span>}
+</span></span><span style="display:flex;"><span>      {status <span style="color:#ff79c6">===</span> <span style="color:#f1fa8c">&#34;pawned&#34;</span> <span style="color:#ff79c6">&amp;&amp;</span> <span style="color:#ff79c6">!</span>isLoading <span style="color:#ff79c6">&amp;&amp;</span> (
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">p</span>&gt;
+</span></span><span style="display:flex;"><span>          We found <span style="color:#ff79c6">this</span> password <span style="color:#ff79c6">in</span> a data leak {numberOfPawned} times. For
+</span></span><span style="display:flex;"><span>          peace <span style="color:#ff79c6">of</span> mind, we recommend choosing a <span style="color:#ff79c6">new</span> one. {<span style="color:#f1fa8c">`</span><span style="color:#f1fa8c">${</span>status<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">`</span>}
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#ff79c6">p</span>&gt;
+</span></span><span style="display:flex;"><span>      )}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      {status <span style="color:#ff79c6">===</span> <span style="color:#f1fa8c">&#34;safe&#34;</span> <span style="color:#ff79c6">&amp;&amp;</span> <span style="color:#ff79c6">!</span>isLoading <span style="color:#ff79c6">&amp;&amp;</span> (
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#ff79c6">div</span>&gt; your password <span style="color:#ff79c6">is</span> health&lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>      )}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      {error <span style="color:#ff79c6">&amp;&amp;</span> <span style="color:#ff79c6">!</span>isLoading <span style="color:#ff79c6">&amp;&amp;</span> &lt;<span style="color:#ff79c6">p</span>&gt;<span style="color:#8be9fd;font-style:italic">Error</span><span style="color:#ff79c6">:</span> {error}&lt;/<span style="color:#ff79c6">p</span>&gt;}
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#ff79c6">form</span>&gt;
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">const</span> rootElement <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">document</span>.getElementById(<span style="color:#f1fa8c">&#34;root&#34;</span>);
+</span></span><span style="display:flex;"><span>ReactDOM.render(&lt;<span style="color:#ff79c6">App</span> /&gt;, rootElement);</span></span></code></pre></div>
+<p>i also already provide code on <a href="https://codesandbox.io/p/sandbox/hibp-simulation-n6wkjj?file=%2Fsrc%2Findex.tsx%3A1%2C1-74%2C1"
+
+
+
+
+ target="_blank"
+ 
+
+
+><strong>codesandbox</strong></a></p>
+<iframe src="https://codesandbox.io/embed/n6wkjj?view=preview&module=%2Fsrc%2Findex.tsx"
+     style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="HIBP Simulation"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   >
+</iframe>
+<p>Next up, we’re gonna keep setting up our self-hosted HIBP.
+For learning purpose, we’ll roll with Go and its standard HTTP library, —it’s simpler, easier to understand, and quicker to set up.</p>
+<h2 id="backend-implementation-go-with-http-standar-lib">Backend Implementation (Go with http standar lib)</h2>
+<p>Since Go 1.22.1 was released with a <a href="https://www.youtube.com/watch?v=H7tbjKFSg58"
+
+
+
+
+ target="_blank"
+ 
+
+
+>fancy HTTP standard library update</a>, I personally prefer to use that instead of bringing in framework abstractions. Another good news is the performance; it&rsquo;s quite good. You can deep dive into benchmarking Go’s stdlib vs Gin vs Fiber in EKS Kubernetes <a href="https://www.youtube.com/watch?v=ok5DDDNsOaQ&amp;t=272s"
+
+
+
+
+ target="_blank"
+ 
+
+
+>here</a>. To get the password dataset from Have I Been Pwned, you need a subscription.
+You can sign up for it <a href="https://haveibeenpwned.com/API/Key"
+
+
+
+
+ target="_blank"
+ 
+
+
+>here</a>..</p>
+<blockquote>
+<p>Without an API key, you won’t be able to download the dataset from HIBP.</p></blockquote>
+<p>Officially, we can download it using this tool</p>
+<p><a href="https://github.com/HaveIBeenPwned/PwnedPasswordsDownloader"
+
+
+
+
+ target="_blank"
+ 
+
+
+>PwnedPasswordsDownloader</a></p>
+<p><strong>but</strong> if you&rsquo;re not familiar to <strong>#C</strong> or <strong>.net</strong>, you can use alternative tools like <strong><a href="threatpatrols/hibp-downloader"
+
+
+
+ 
+
+
+>python</a></strong>, <strong><a href="easybill/easypwned"
+
+
+
+ 
+
+
+>Rust</a></strong>, <strong><a href="wKovacs64/hibp"
+
+
+
+ 
+
+
+>Nodejs</a></strong>, and <strong><a href="oyeaussie/PHPPwnedPasswordsDownloader"
+
+
+
+ 
+
+
+>PHP</a></strong> . don&rsquo;t worry, the process and flow are pretty much the same across the board.
+And finally, you&rsquo;ll get a huge <code>.txt</code> file that contains the list of pwned passwords.</p>
+
+
+
+  
+
+
+
+
+
+  
+
+
+<div class="notice warning">
+  <div class="notice-head"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="22" height="22">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+      </svg><p>Warning</p>
+  </div>
+  <div class="notice-body"><p>Beware! Don’t open the file with regular editors like VSCode or Neovim—it’ll take forever and might freeze your computer. You should use a specialized editor for handling huge files, like <a href="https://www.geeksforgeeks.org/less-command-linux-examples/"
+
+
+
+
+ target="_blank"
+ 
+
+
+>less</a>, <a href="https://klogg.filimonov.dev/"
+
+
+
+
+ target="_blank"
+ 
+
+
+>klogg</a>, or something similar.</p></div>
+</div>
+
+<p><img src="line-text.webp" alt="havaibeenpawned online" title="This is an example of a sliced line from the `.txt` HaveIBeenPwned list."></p>
+<h3 id="converting-dataset-txt-to-sqlite">converting dataset .txt to sqlite</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Column Name</th>
+          <th>Data Type</th>
+          <th>Constraints</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>prefix</td>
+          <td>TEXT</td>
+          <td>NOT NULL, PRIMARY KEY</td>
+      </tr>
+      <tr>
+          <td>suffix</td>
+          <td>TEXT</td>
+          <td>NOT NULL, PRIMARY KEY</td>
+      </tr>
+      <tr>
+          <td>occurrences</td>
+          <td>INTEGER</td>
+          <td>NOT NULL</td>
+      </tr>
+  </tbody>
+</table>
+<p>Using OS &ldquo;file reads&rdquo; in Go is still fine, but sometimes we need a more maintainable solution. I prefer converting it to an SQLite database—it’s easier to work with and quite fast. We’ll need a script to transform the <code>.txt</code> file into SQLite.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#ff79c6">import</span> (
+</span></span><span style="display:flex;"><span> <span style="color:#f1fa8c">&#34;bufio&#34;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#f1fa8c">&#34;database/sql&#34;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#f1fa8c">&#34;log&#34;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#f1fa8c">&#34;os&#34;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#f1fa8c">&#34;strings&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> _ <span style="color:#f1fa8c">&#34;github.com/mattn/go-sqlite3&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Open the text file containing the password hashes and their occurrences.</span>
+</span></span><span style="display:flex;"><span>    file, err <span style="color:#ff79c6">:=</span> os.<span style="color:#50fa7b">Open</span>(<span style="color:#f1fa8c">&#34;../data/hibp_example.txt&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">defer</span> file.<span style="color:#50fa7b">Close</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    db, err <span style="color:#ff79c6">:=</span> sql.<span style="color:#50fa7b">Open</span>(<span style="color:#f1fa8c">&#34;sqlite3&#34;</span>, <span style="color:#f1fa8c">&#34;../data/hbip.db&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">defer</span> db.<span style="color:#50fa7b">Close</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    _, err = db.<span style="color:#50fa7b">Exec</span>(<span style="color:#f1fa8c">`CREATE TABLE IF NOT EXISTS pwned_passwords (
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">        prefix TEXT NOT NULL,
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">        suffix TEXT NOT NULL,
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">        occurrences INTEGER NOT NULL,
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">        PRIMARY KEY (prefix, suffix) 
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    )`</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Begin a new database transaction to batch insert data for better performance.</span>
+</span></span><span style="display:flex;"><span>    tx, err <span style="color:#ff79c6">:=</span> db.<span style="color:#50fa7b">Begin</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Prepare an SQL statement to insert or ignore duplicate records into the table.</span>
+</span></span><span style="display:flex;"><span>    stmt, err <span style="color:#ff79c6">:=</span> tx.<span style="color:#50fa7b">Prepare</span>(<span style="color:#f1fa8c">&#34;INSERT OR IGNORE INTO pwned_passwords (prefix, suffix, occurrences) VALUES (?, ?, ?)&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">defer</span> stmt.<span style="color:#50fa7b">Close</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Create a scanner to read the text file line by line.</span>
+</span></span><span style="display:flex;"><span>    scanner <span style="color:#ff79c6">:=</span> bufio.<span style="color:#50fa7b">NewScanner</span>(file)
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">for</span> scanner.<span style="color:#50fa7b">Scan</span>() {
+</span></span><span style="display:flex;"><span>        line <span style="color:#ff79c6">:=</span> scanner.<span style="color:#50fa7b">Text</span>()
+</span></span><span style="display:flex;"><span>        parts <span style="color:#ff79c6">:=</span> strings.<span style="color:#50fa7b">Split</span>(line, <span style="color:#f1fa8c">&#34;:&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6272a4">// Skip lines that don&#39;t follow the expected format</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">if</span> <span style="color:#8be9fd;font-style:italic">len</span>(parts) <span style="color:#ff79c6">!=</span> <span style="color:#bd93f9">2</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">continue</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        hash <span style="color:#ff79c6">:=</span> parts[<span style="color:#bd93f9">0</span>]    <span style="color:#6272a4">// The full hash value from the line</span>
+</span></span><span style="display:flex;"><span>        count <span style="color:#ff79c6">:=</span> parts[<span style="color:#bd93f9">1</span>]   <span style="color:#6272a4">// The occurrence count from the line</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        prefix <span style="color:#ff79c6">:=</span> hash[:<span style="color:#bd93f9">5</span>]  <span style="color:#6272a4">// Extract the first 5 characters as the prefix</span>
+</span></span><span style="display:flex;"><span>        suffix <span style="color:#ff79c6">:=</span> hash[<span style="color:#bd93f9">5</span>:]  <span style="color:#6272a4">// Extract the remaining characters as the suffix</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        _, err <span style="color:#ff79c6">:=</span> stmt.<span style="color:#50fa7b">Exec</span>(prefix, suffix, count) 
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>            log.<span style="color:#50fa7b">Printf</span>(<span style="color:#f1fa8c">&#34;Failed to insert record: %v&#34;</span>, err)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// Commit the transaction to finalize the batch insert into the database.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">:=</span> tx.<span style="color:#50fa7b">Commit</span>(); err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>        log.<span style="color:#50fa7b">Fatalf</span>(<span style="color:#f1fa8c">&#34;Failed to commit transaction: %v&#34;</span>, err)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    log.<span style="color:#50fa7b">Println</span>(<span style="color:#f1fa8c">&#34;Data conversion completed.&#34;</span>)
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>You need to run that script to prepare the dataset as an SQLite db.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>go run scripts/text_to_sqlite.go
+</span></span></code></pre></div><h3 id="add-a-simple-router">add a simple router</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#6272a4">// main.go</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>router <span style="color:#ff79c6">:=</span> http.<span style="color:#50fa7b">NewServeMux</span>()
+</span></span><span style="display:flex;"><span>router.<span style="color:#50fa7b">HandleFunc</span>(<span style="color:#f1fa8c">&#34;/api/v1/hibp&#34;</span>, handler.<span style="color:#50fa7b">CheckHandler</span>(db))</span></span></code></pre></div>
+<p>Maybe we need a separate package to make it reusable. It will contain functions for initializing the database and finding suffixes</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#ff79c6">package</span> database
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">import</span> (
+</span></span><span style="display:flex;"><span> <span style="color:#f1fa8c">&#34;database/sql&#34;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#f1fa8c">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span> _ <span style="color:#f1fa8c">&#34;github.com/mattn/go-sqlite3&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">type</span> DB <span style="color:#8be9fd;font-style:italic">struct</span> {
+</span></span><span style="display:flex;"><span> <span style="color:#ff79c6">*</span>sql.DB
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">InitDatabase</span>(dbPath <span style="color:#8be9fd">string</span>) (<span style="color:#ff79c6">*</span>sql.DB, <span style="color:#8be9fd">error</span>) {
+</span></span><span style="display:flex;"><span> <span style="color:#ff79c6">if</span> dbPath <span style="color:#ff79c6">==</span> <span style="color:#f1fa8c">&#34;&#34;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">return</span> <span style="color:#ff79c6">nil</span>, fmt.<span style="color:#50fa7b">Errorf</span>(<span style="color:#f1fa8c">&#34;database path is empty&#34;</span>)
+</span></span><span style="display:flex;"><span> }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> db, err <span style="color:#ff79c6">:=</span> sql.<span style="color:#50fa7b">Open</span>(<span style="color:#f1fa8c">&#34;sqlite3&#34;</span>, dbPath)
+</span></span><span style="display:flex;"><span> <span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">return</span> <span style="color:#ff79c6">nil</span>, fmt.<span style="color:#50fa7b">Errorf</span>(<span style="color:#f1fa8c">&#34;failed to open database: %v&#34;</span>, err)
+</span></span><span style="display:flex;"><span> }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#ff79c6">return</span> db, <span style="color:#ff79c6">nil</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">// finding suffix base on prefix</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">GetSuffixesByPrefix</span>(db <span style="color:#ff79c6">*</span>DB, prefix <span style="color:#8be9fd">string</span>) ([]<span style="color:#8be9fd">string</span>, <span style="color:#8be9fd">error</span>) {
+</span></span><span style="display:flex;"><span> query <span style="color:#ff79c6">:=</span> <span style="color:#f1fa8c">`SELECT suffix FROM hibp WHERE prefix = ?`</span>
+</span></span><span style="display:flex;"><span> rows, err <span style="color:#ff79c6">:=</span> db.<span style="color:#50fa7b">Query</span>(query, prefix)
+</span></span><span style="display:flex;"><span> <span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">return</span> <span style="color:#ff79c6">nil</span>, fmt.<span style="color:#50fa7b">Errorf</span>(<span style="color:#f1fa8c">&#34;failed to query suffixes: %v&#34;</span>, err)
+</span></span><span style="display:flex;"><span> }
+</span></span><span style="display:flex;"><span> <span style="color:#ff79c6">defer</span> rows.<span style="color:#50fa7b">Close</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#8be9fd;font-style:italic">var</span> suffixes []<span style="color:#8be9fd">string</span>
+</span></span><span style="display:flex;"><span> <span style="color:#ff79c6">for</span> rows.<span style="color:#50fa7b">Next</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#8be9fd;font-style:italic">var</span> suffix <span style="color:#8be9fd">string</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">:=</span> rows.<span style="color:#50fa7b">Scan</span>(<span style="color:#ff79c6">&amp;</span>suffix); err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>   <span style="color:#ff79c6">return</span> <span style="color:#ff79c6">nil</span>, fmt.<span style="color:#50fa7b">Errorf</span>(<span style="color:#f1fa8c">&#34;failed to scan suffix: %v&#34;</span>, err)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  suffixes = <span style="color:#8be9fd;font-style:italic">append</span>(suffixes, suffix)
+</span></span><span style="display:flex;"><span> }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">:=</span> rows.<span style="color:#50fa7b">Err</span>(); err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">return</span> <span style="color:#ff79c6">nil</span>, fmt.<span style="color:#50fa7b">Errorf</span>(<span style="color:#f1fa8c">&#34;error iterating over rows: %v&#34;</span>, err)
+</span></span><span style="display:flex;"><span> }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#ff79c6">return</span> suffixes, <span style="color:#ff79c6">nil</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>You can implement the database package in the router handler andBasically, I just made this project more simple and similar like <em><a href="https://hono.dev/"
+
+
+
+
+ target="_blank"
+ 
+
+
+>Hono/Express</a></em> framework.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#ff79c6">package</span> handler
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">import</span> (
+</span></span><span style="display:flex;"><span> <span style="color:#f1fa8c">&#34;database/sql&#34;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#f1fa8c">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#f1fa8c">&#34;net/http&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">// query handler</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">CheckHandler</span>(db <span style="color:#ff79c6">*</span>sql.DB) http.HandlerFunc {
+</span></span><span style="display:flex;"><span> <span style="color:#ff79c6">return</span> <span style="color:#8be9fd;font-style:italic">func</span>(w http.ResponseWriter, r<span style="color:#ff79c6">*</span>http.Request) {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">if</span> r.Method <span style="color:#ff79c6">!=</span> http.MethodGet {
+</span></span><span style="display:flex;"><span>   http.<span style="color:#50fa7b">Error</span>(w, <span style="color:#f1fa8c">&#34;Method not allowed&#34;</span>, http.StatusMethodNotAllowed)
+</span></span><span style="display:flex;"><span>   <span style="color:#ff79c6">return</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4">// fetch prefix from url query</span>
+</span></span><span style="display:flex;"><span>  prefix <span style="color:#ff79c6">:=</span> r.URL.<span style="color:#50fa7b">Query</span>().<span style="color:#50fa7b">Get</span>(<span style="color:#f1fa8c">&#34;prefix&#34;</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">if</span> <span style="color:#8be9fd;font-style:italic">len</span>(prefix) <span style="color:#ff79c6">!=</span> <span style="color:#bd93f9">5</span> {
+</span></span><span style="display:flex;"><span>   http.<span style="color:#50fa7b">Error</span>(w, <span style="color:#f1fa8c">&#34;Prefix must be exactly 5 characters&#34;</span>, http.StatusBadRequest)
+</span></span><span style="display:flex;"><span>   <span style="color:#ff79c6">return</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  rows, err <span style="color:#ff79c6">:=</span> db.<span style="color:#50fa7b">Query</span>(<span style="color:#f1fa8c">&#34;SELECT suffix, COUNT(*) FROM pwned_passwords WHERE prefix = ? GROUP BY suffix&#34;</span>, prefix)
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>   http.<span style="color:#50fa7b">Error</span>(w, <span style="color:#f1fa8c">&#34;Internal server error&#34;</span>, http.StatusInternalServerError)
+</span></span><span style="display:flex;"><span>   <span style="color:#ff79c6">return</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">defer</span> rows.<span style="color:#50fa7b">Close</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8be9fd;font-style:italic">var</span> result <span style="color:#8be9fd">string</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">for</span> rows.<span style="color:#50fa7b">Next</span>() {
+</span></span><span style="display:flex;"><span>   <span style="color:#8be9fd;font-style:italic">var</span> suffix <span style="color:#8be9fd">string</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#8be9fd;font-style:italic">var</span> occurrences <span style="color:#8be9fd">int</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#ff79c6">if</span> err <span style="color:#ff79c6">:=</span> rows.<span style="color:#50fa7b">Scan</span>(<span style="color:#ff79c6">&amp;</span>suffix, <span style="color:#ff79c6">&amp;</span>occurrences); err <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">nil</span> {
+</span></span><span style="display:flex;"><span>    http.<span style="color:#50fa7b">Error</span>(w, <span style="color:#f1fa8c">&#34;Error scanning result&#34;</span>, http.StatusInternalServerError)
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">return</span>
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#6272a4">// Ensure only the suffix is returned</span>
+</span></span><span style="display:flex;"><span>   result <span style="color:#ff79c6">+=</span> fmt.<span style="color:#50fa7b">Sprintf</span>(<span style="color:#f1fa8c">&#34;%s:%d\n&#34;</span>, suffix, occurrences)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">if</span> result <span style="color:#ff79c6">==</span> <span style="color:#f1fa8c">&#34;&#34;</span> {
+</span></span><span style="display:flex;"><span>   w.<span style="color:#50fa7b">WriteHeader</span>(http.StatusNotFound)
+</span></span><span style="display:flex;"><span>   fmt.<span style="color:#50fa7b">Fprint</span>(w, <span style="color:#f1fa8c">&#34;No suffix found&#34;</span>)
+</span></span><span style="display:flex;"><span>   <span style="color:#ff79c6">return</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4">// returning text format as a response</span>
+</span></span><span style="display:flex;"><span>  w.<span style="color:#50fa7b">Header</span>().<span style="color:#50fa7b">Set</span>(<span style="color:#f1fa8c">&#34;Content-Type&#34;</span>, <span style="color:#f1fa8c">&#34;text/plain&#34;</span>)
+</span></span><span style="display:flex;"><span>  w.<span style="color:#50fa7b">WriteHeader</span>(http.StatusOK)
+</span></span><span style="display:flex;"><span>  fmt.<span style="color:#50fa7b">Fprint</span>(w, result)
+</span></span><span style="display:flex;"><span> }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>I also providing full source code at github, you can check it out [<a href="https://github.com/susilodev/mini-hbip"
+
+
+
+
+ target="_blank"
+ 
+
+
+>here</a>]. just make sure <strong>Go 1.23</strong> is installed on your machine cz I haven’t finished the Podman/Docker config yet.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>The budget for this implementation is cheap, even you can do it for free. maybe you&rsquo;ll got rate limits, but it&rsquo;s only affects the client network as a frontend. There is no significant impact on your server, <strong>except</strong> when you are running a self-hosted HBIP, which might incur some hosting costs.</p>
+<br>
+<br>
+<br>
+          </div>
+
+          <div class="flex flex-col items-start justify-between">
+            
+            
+              <div class="mb-10 flex flex-col items-start lg:mb-0">
+                <h5 class="text-lg">Tags:</h5>
+                <ul class="mt-4 space-x-2">
+                  
+                    <li class="inline-block ">
+                      <a
+                        class="bg-slate-200 hover:bg-primary dark:bg-darkmode-light dark:hover:bg-slate-300 dark:hover:text-black m-1 text-sm block  rounded-sm px-3 border-[1px]  border-slate-300/50 rounded-sm py-2 hover:text-white"
+                        href="/tags/security/">
+                        #Security
+                      </a>
+                    </li>
+                  
+                    <li class="inline-block ">
+                      <a
+                        class="bg-slate-200 hover:bg-primary dark:bg-darkmode-light dark:hover:bg-slate-300 dark:hover:text-black m-1 text-sm block  rounded-sm px-3 border-[1px]  border-slate-300/50 rounded-sm py-2 hover:text-white"
+                        href="/tags/reactjs/">
+                        #Reactjs
+                      </a>
+                    </li>
+                  
+                    <li class="inline-block ">
+                      <a
+                        class="bg-slate-200 hover:bg-primary dark:bg-darkmode-light dark:hover:bg-slate-300 dark:hover:text-black m-1 text-sm block  rounded-sm px-3 border-[1px]  border-slate-300/50 rounded-sm py-2 hover:text-white"
+                        href="/tags/go/">
+                        #Go
+                      </a>
+                    </li>
+                  
+                    <li class="inline-block ">
+                      <a
+                        class="bg-slate-200 hover:bg-primary dark:bg-darkmode-light dark:hover:bg-slate-300 dark:hover:text-black m-1 text-sm block  rounded-sm px-3 border-[1px]  border-slate-300/50 rounded-sm py-2 hover:text-white"
+                        href="/tags/haveibeenpwned/">
+                        #Haveibeenpwned
+                      </a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+          </div>
+        </article>
+      </section>
+      <aside class="content !overflow-visible hidden lg:flex lg:w-6/12">
+        <div class="sticky  top-22 self-start">
+          
+
+ 
+  
+
+<details open class="table-of-content blog">
+  <summary>
+    
+      Table of Contents
+    
+  </summary>
+  <nav id="TableOfContents">
+  <ol>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#the-hidden-role-of-data-breaches-in-password-checks">The Hidden Role of Data Breaches in Password Checks</a>
+      <ol>
+        <li><a href="#haveibeenpwned-hibp">haveibeenpwned (HIBP)</a></li>
+        <li><a href="#pragmatic-analysis">Pragmatic Analysis</a></li>
+      </ol>
+    </li>
+    <li><a href="#technical-implementation">Technical Implementation</a></li>
+    <li><a href="#frontend-implementation-reactjs">Frontend Implementation (Reactjs)</a></li>
+    <li><a href="#backend-implementation-go-with-http-standar-lib">Backend Implementation (Go with http standar lib)</a>
+      <ol>
+        <li><a href="#converting-dataset-txt-to-sqlite">converting dataset .txt to sqlite</a></li>
+        <li><a href="#add-a-simple-router">add a simple router</a></li>
+      </ol>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ol>
+</nav>
+</details>
+
+        </div>
+      </aside>
+
+      
+      
+      
+      
+    </div>
+  </section>
+
+    </main>
+
+    
+    <footer class="pt-24">
+  <div class="container">
+    <div class="flex flex-row items-center justify-between py-10">
+      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:text-left"></div>
+      <div class="lg:col-6 mb-8 text-center lg:mb-0"></div>
+
+      <div class="flex w-full justify-end items-center gap-x-4">
+        <div class="text-sm flex intems-center pr-4">
+          <p class="font-light">Maintained by susilodev</p>
+        </div>
+        <ul class="flex flex-row gap-4 justify-end">
+          
+            <li>
+              <a
+                target="_blank"
+                aria-label="github"
+                rel="nofollow noopener"
+                href="https://www.github.com/susilodev">
+                <i class="fab fa-github text-xl"></i>
+              </a>
+            </li>
+          
+            <li>
+              <a
+                target="_blank"
+                aria-label="x"
+                rel="nofollow noopener"
+                href="https://x.com/susilodev">
+                <i class="fab fa-x  text-xl"></i>
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+    
+    
+
+
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+    
+      
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<script
+  crossorigin="anonymous"
+  integrity=""
+  src="/js/script.js"></script>
+
+
+<script
+  defer
+  async
+  crossorigin="anonymous"
+  integrity=""
+  src="/js/script-lazy.js"></script>
+
+
+
+<script>
+  if ('serviceWorker' in navigator){navigator.serviceWorker.register("/service-worker.js");}
+</script>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  </body>
+</html>
