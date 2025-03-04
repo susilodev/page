@@ -1,13 +1,13 @@
+@import "tailwindcss";
+
 /* Add your own custom styles here */
 /* Custom CSS Anda */
-.custom-button {
-  @apply bg-blue-500 text-white py-2 px-4 rounded;
-}
-.content {
+
+/* .content {
   @apply prose-h1:text-3xl md:prose-h1:text-h1-sm;
   @apply prose-h2:text-2xl md:prose-h2:text-h2-sm;
   @apply prose-h3:text-xl md:prose-h3:text-h3-sm;
   @apply prose-blockquote:rounded-lg prose-blockquote:border prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-slate-200 prose-blockquote:px-8 prose-blockquote:py-2 prose-blockquote:font-secondary prose-blockquote:text-lg prose-blockquote:leading-8 prose-blockquote:not-italic prose-blockquote:text-black dark:prose-blockquote:border-darkmode-primary dark:prose-blockquote:bg-darkmode-light dark:prose-blockquote:text-darkmode-text-light;
   @apply prose-pre:rounded-lg prose-pre:bg-slate-200 dark:prose-pre:bg-darkmode-light;
   @apply prose-code:py-1 prose-code:px-1 prose-code:text-primary dark:prose-code:text-darkmode-primary;
-}
+} */

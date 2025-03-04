@@ -29,6 +29,8 @@
   })();
 </script>
 
+<link rel="stylesheet" href="css/custom.css" />
+
 <!-- main styles -->
 {{ $styles := slice }}
 {{ $stylesLazy := slice }}
@@ -70,8 +72,6 @@
   href="{{ $styles.RelPermalink }}"
   integrity="{{ $styles.Data.Integrity }}"
   rel="stylesheet" />
-
-<link rel="stylesheet" href="/css/style.css" />
 
 <!-- link lazy style -->
 <link
