@@ -28,4 +28,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          publish_branch: gh-pages # Branch tempat hasil build akan disimpan
+          publish_branch: main # Branch tempat hasil build akan disimpan
